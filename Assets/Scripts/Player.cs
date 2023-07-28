@@ -19,30 +19,10 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        print(gameObject.name + " " + InputDir);
-        // if (InputDir != Vector2.zero && Velocity.magnitude <= MaxSpeed)
-        // Velocity = Vector3.MoveTowards(Velocity, new Vector3(InputDir.x, 0, InputDir.y) * MaxSpeed, Time.deltaTime * Acceleration);
-
         if (InputDir == Vector2.zero)
             Velocity = Vector3.MoveTowards(Velocity, Vector2.zero, Time.deltaTime * Deceleration);
         else
             Velocity = Vector3.MoveTowards(Velocity, MaxSpeed * new Vector3(InputDir.x, 0, InputDir.y), Time.deltaTime * Acceleration);
-        print("?? " + (MaxSpeed * new Vector3(InputDir.x, 0, InputDir.y)) + " v:" + Velocity + " delta:" + Time.deltaTime * Acceleration + " res:" + Vector2.MoveTowards(Velocity, MaxSpeed * new Vector3(InputDir.x, 0, InputDir.y), Time.deltaTime * Acceleration));
-
-        /*
-        else
-        {
-            if (InputDir.x != 0)
-                Velocity.x = Mathf.MoveTowards(Velocity.x, MaxSpeed * InputDir.x, Time.deltaTime * Acceleration);
-            if (InputDir.y != 0)
-                Velocity.z = Mathf.MoveTowards(Velocity.z, MaxSpeed * InputDir.y, Time.deltaTime * Acceleration);
-
-            if ((InputDir.x == 0 && InputDir.y != 0))// || Velocity.x > MaxSpeed)
-                Velocity.x = Mathf.MoveTowards(Velocity.x, 0, Time.deltaTime * Deceleration);
-            if ((InputDir.y == 0 && InputDir.x != 0))// || Velocity.z > MaxSpeed)
-                Velocity.z = Mathf.MoveTowards(Velocity.z, 0, Time.deltaTime * Deceleration);
-        }
-        */
 
         transform.position += Velocity * Time.deltaTime;
 
