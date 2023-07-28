@@ -71,3 +71,8 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 .vscode/settings.json
+ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
+ProjectSettings/ShaderGraphSettings.asset
+ProjectSettings/ShaderGraphSettings.asset
+ProjectSettings/ShaderGraphSettings.asset
+ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
