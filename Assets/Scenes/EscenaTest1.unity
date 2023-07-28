@@ -191,6 +191,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4261694508324364979, guid: 527d6d58718e3cc4d867d69102ec2875, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4261694508324364982, guid: 527d6d58718e3cc4d867d69102ec2875, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -363,6 +367,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4261694508324364979, guid: 527d6d58718e3cc4d867d69102ec2875, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4261694508324364982, guid: 527d6d58718e3cc4d867d69102ec2875, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -601,6 +609,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4261694508324364979, guid: 527d6d58718e3cc4d867d69102ec2875, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4261694508324364982, guid: 527d6d58718e3cc4d867d69102ec2875, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -812,6 +824,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4261694508324364979, guid: 527d6d58718e3cc4d867d69102ec2875, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4261694508324364982, guid: 527d6d58718e3cc4d867d69102ec2875, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -926,6 +942,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4261694508324364979, guid: 527d6d58718e3cc4d867d69102ec2875, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4261694508324364982, guid: 527d6d58718e3cc4d867d69102ec2875, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -936,7 +956,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4261694508324364982, guid: 527d6d58718e3cc4d867d69102ec2875, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.4
+      value: 2.43226
       objectReference: {fileID: 0}
     - target: {fileID: 4261694508324364982, guid: 527d6d58718e3cc4d867d69102ec2875, type: 3}
       propertyPath: m_LocalPosition.z

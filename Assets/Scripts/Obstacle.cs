@@ -7,6 +7,8 @@ public class Obstacle : MonoBehaviour
 {
     public Vector3 movementDirection;
 
+    public Vector3 impulse;
+
     void Start()
     {
 
@@ -15,5 +17,18 @@ public class Obstacle : MonoBehaviour
     void Update()
     {
         transform.position += movementDirection * Time.deltaTime;
+
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        print("ES BLEYBLAAAADEEEEE");
+
+        if (other.GetComponent<Player>() != null)
+        {
+            other.GetComponent<Player>().AddImpulse(impulse);
+        }
+
     }
 }
