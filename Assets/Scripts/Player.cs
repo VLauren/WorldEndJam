@@ -13,16 +13,28 @@ public class Player : MonoBehaviour
 
     Vector2 InputDir;
 
+    bool Dead;
+
     void Start()
     {
     }
 
     void Update()
     {
-        if (InputDir == Vector2.zero)
-            Velocity = Vector3.MoveTowards(Velocity, Vector2.zero, Time.deltaTime * Deceleration);
+        if (Dead)
+        {
+            Velocity = Vector3.MoveTowards(Velocity, new Vector3(0, -100, 0), Time.deltaTime * Deceleration);
+        }
         else
-            Velocity = Vector3.MoveTowards(Velocity, MaxSpeed * new Vector3(InputDir.x, 0, InputDir.y), Time.deltaTime * Acceleration);
+        {
+            if (InputDir == Vector2.zero)
+                Velocity = Vector3.MoveTowards(Velocity, Vector2.zero, Time.deltaTime * Deceleration);
+            else
+                Velocity = Vector3.MoveTowards(Velocity, MaxSpeed * new Vector3(InputDir.x, 0, InputDir.y), Time.deltaTime * Acceleration);
+
+            if (transform.position.x > 44)
+                Dead = true;
+        }
 
         transform.position += Velocity * Time.deltaTime;
 
