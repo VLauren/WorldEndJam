@@ -5,13 +5,15 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
+    public Vector3 Velocity;
+
+
     void Start()
     {
     }
 
     void Update()
     {
-        
     }
 
     void OnMove(InputValue value)
