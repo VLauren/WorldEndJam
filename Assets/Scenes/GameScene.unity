@@ -278,14 +278,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: -0.26914987, y: -0.69874287, z: 0.32582977, w: -0.577193}
+  m_LocalRotation: {x: -0.022171618, y: 0.83949685, z: -0.5418241, w: -0.034352247}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 50, y: -259.116, z: 0}
+  m_LocalEulerAnglesHint: {x: 65.678, y: 184.686, z: 0}
 --- !u!114 &705507996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1221,6 +1221,14 @@ PrefabInstance:
       objectReference: {fileID: 4261694508324364989, guid: 03cfb46521e6e0346b8cc947bfca7ba0, type: 3}
     - target: {fileID: 4875747991167988009, guid: 22268292d4c2b1646b649ad24ee947df, type: 3}
       propertyPath: Prefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 4261694508324364989, guid: dafa5db175dd9b340bf4d1555eb6ac6a, type: 3}
+    - target: {fileID: 4875747991167988009, guid: 22268292d4c2b1646b649ad24ee947df, type: 3}
+      propertyPath: Prefabs.Array.data[2]
+      value: 
+      objectReference: {fileID: 4261694508324364989, guid: dafa5db175dd9b340bf4d1555eb6ac6a, type: 3}
+    - target: {fileID: 4875747991167988009, guid: 22268292d4c2b1646b649ad24ee947df, type: 3}
+      propertyPath: Prefabs.Array.data[3]
       value: 
       objectReference: {fileID: 4261694508324364989, guid: dafa5db175dd9b340bf4d1555eb6ac6a, type: 3}
     - target: {fileID: 4966536782715893230, guid: 22268292d4c2b1646b649ad24ee947df, type: 3}

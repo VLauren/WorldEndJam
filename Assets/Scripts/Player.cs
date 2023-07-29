@@ -159,6 +159,8 @@ public class Player : MonoBehaviour
     public void ApplyDamage(int _damage)
     {
         ReceivedDamage += _damage;
+
+        EdgeCamera.CameraShake(0.5f, 0.3f);
     }
 
     public void AddImpulse(Vector3 _impulse)
