@@ -3,7 +3,12 @@ guid: 349c3a69de31f0b4f97b91b1571e1a10
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Palette_Obstaculo3
+    second: {fileID: 2100000, guid: 3a668488d0aba5a4fa19b79493147ff9, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
