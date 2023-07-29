@@ -6,8 +6,8 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour
 {
     public Vector3 movementDirection;
-
     public Vector3 impulse;
+    public int Damage;
 
     void Start()
     {
@@ -23,11 +23,10 @@ public class Obstacle : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        print("ES BLEYBLAAAADEEEEE");
-
         if (other.GetComponent<Player>() != null)
         {
             other.GetComponent<Player>().AddImpulse(impulse);
+            other.GetComponent<Player>().ApplyDamage(Damage);
         }
 
     }

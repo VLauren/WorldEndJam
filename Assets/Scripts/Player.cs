@@ -62,6 +62,11 @@ public class Player : MonoBehaviour
         InputDir = value.Get<Vector2>();
     }
 
+    public void ApplyDamage(int _damage)
+    {
+
+    }
+
     public void AddImpulse(Vector3 _impulse)
     {
         Velocity = _impulse;
@@ -74,8 +79,8 @@ public class Player : MonoBehaviour
             Vector3 dir = other.transform.position - transform.position;
             dir.Normalize();
 
-            other.GetComponent<Player>().AddImpulse(dir * 15);
-            AddImpulse(-dir * 15);
+            other.GetComponent<Player>().AddImpulse(dir * Game.BoatCollisionPush);
+            AddImpulse(-dir * Game.BoatCollisionPush);
         }
     }
 }
