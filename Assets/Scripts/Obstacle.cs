@@ -25,8 +25,9 @@ public class Obstacle : MonoBehaviour
     {
         if (other.GetComponent<Player>() != null)
         {
-            other.GetComponent<Player>().AddImpulse(impulse);
             other.GetComponent<Player>().ApplyDamage(Damage);
+
+            other.GetComponent<Player>().AddImpulse(impulse);
         }
 
     }

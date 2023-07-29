@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     public float Acceleration;
     public float Deceleration;
 
-    public int Damage = 0;
+    public int ReceivedDamage = 0;
 
     [Space()]
     public Vector2 XMovLimits;
@@ -66,7 +66,7 @@ public class Player : MonoBehaviour
 
     public void ApplyDamage(int _damage)
     {
-
+        ReceivedDamage += _damage;
     }
 
     public void AddImpulse(Vector3 _impulse)
@@ -88,6 +88,6 @@ public class Player : MonoBehaviour
 
     public void AddScaledImpulse(Vector3 _impulse)
     {
-        Velocity = _impulse * Damage;
+        Velocity = _impulse * ReceivedDamage;
     }
 }
