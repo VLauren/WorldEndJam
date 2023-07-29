@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
 
     Vector2 InputDir;
 
-    bool Dead;
+    bool Dead, Winner;
     int PlayerNumber;
 
     void Awake()
@@ -57,9 +57,9 @@ public class Player : MonoBehaviour
             pos.z = Mathf.Clamp(pos.z, ZMovLimits.x, ZMovLimits.y);
             transform.position = pos;
 
-            if(Game.Instance.GameEnd)
+            if(Game.Instance.GameEnd && !Winner)
             {
-                Dead = true;
+                Winner = true;
                 Debug.Log("PLAYER " + PlayerNumber + " WINS!!!");
             }
 
