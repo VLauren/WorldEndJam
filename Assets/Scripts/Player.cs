@@ -25,10 +25,11 @@ public class Player : MonoBehaviour
 
     void Awake()
     {
-        PlayerNumber = Game.Instance.OnPlayerJoined(this);
     }
+
     private void Start()
     {
+        PlayerNumber = Game.Instance.OnPlayerJoined(this);
         transform.position = new Vector3(15 + PlayerNumber * 6, 2.85f, -27.55f);
         transform.rotation = Quaternion.Euler(0, 90, 0);
 
@@ -65,7 +66,7 @@ public class Player : MonoBehaviour
                 Debug.Log("PLAYER " + PlayerNumber + " WINS!!!");
             }
 
-            if (transform.position.x > 44)
+            if (transform.position.x > 47.5f)
             {
                 Dead = true;
                 Game.Instance.PlayerDead(PlayerNumber);
