@@ -1,17 +1,18 @@
-//using System.Numerics;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Obstacle : MonoBehaviour
+public class PowerUp : MonoBehaviour
 {
     public Vector3 movementDirection;
     public Vector3 impulse;
     public Vector3 scaledImpulse;
-    public int Damage;
+
+    public int HealedDamage;
 
     public bool Immunity;
 
+    // Update is called once per frame
     void Update()
     {
         transform.position += movementDirection * Time.deltaTime;
@@ -27,9 +28,7 @@ public class Obstacle : MonoBehaviour
     {
         if (other.GetComponent<Player>() != null)
         {
-            other.GetComponent<Player>().ApplyDamage(Damage);
-            other.GetComponent<Player>().AddImpulse(impulse);
-            other.GetComponent<Player>().AddScaledImpulse(scaledImpulse);
+            other.GetComponent<Player>().HealDamage(HealedDamage);
         }
     }
 }
