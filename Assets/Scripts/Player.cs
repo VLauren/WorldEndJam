@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
     float DashCDCounter;
     bool Dashing;
 
-    Transform Model; 
+    Transform Model;
 
     void Awake()
     {
@@ -112,6 +112,11 @@ public class Player : MonoBehaviour
         {
             AddImpulse(new Vector3(10, 0, 0));
         }
+
+        if (ReceivedDamage <= 0)
+        {
+            ReceivedDamage = 0;
+        }
     }
 
     void OnMove(InputValue value)
@@ -127,7 +132,7 @@ public class Player : MonoBehaviour
 
     void OnDash(InputValue value)
     {
-        if(!Dead && !Game.Instance.Joining && DashCDCounter <= 0 && InputDir != Vector2.zero)
+        if (!Dead && !Game.Instance.Joining && DashCDCounter <= 0 && InputDir != Vector2.zero)
         {
             StartCoroutine(DashRoutine());
         }
@@ -159,6 +164,8 @@ public class Player : MonoBehaviour
     public void ApplyDamage(int _damage)
     {
         ReceivedDamage += _damage;
+
+        EdgeCamera.CameraShake(0.5f, 0.3f);
     }
 
     public void AddImpulse(Vector3 _impulse)
@@ -173,7 +180,7 @@ public class Player : MonoBehaviour
             Vector3 dir = other.transform.position - transform.position;
             dir.Normalize();
 
-            if(!other.GetComponent<Player>().Dashing)
+            if (!other.GetComponent<Player>().Dashing)
             {
                 other.GetComponent<Player>().AddImpulse(dir * Game.BoatCollisionPush);
                 other.GetComponent<Player>().AddScaledImpulse(dir * Game.BoatCollisionScaledPush);
@@ -192,5 +199,13 @@ public class Player : MonoBehaviour
     public void AddScaledImpulse(Vector3 _impulse)
     {
         Velocity = _impulse * ReceivedDamage;
+    }
+
+    public void HealDamage(int _healing)
+    {
+        if (ReceivedDamage >= 0)
+        {
+            ReceivedDamage -= _healing;
+        }
     }
 }
