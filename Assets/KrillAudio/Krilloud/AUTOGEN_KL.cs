@@ -50,7 +50,7 @@ namespace KrillAudio.Krilloud
 
 			/// <summary>
 			/// Variable: uivar
-			/// Range: [0 - 4]
+			/// Range: [0 - 3]
 			/// Type: Local
 			/// </summary>
 			public const string uivar = "uivar";
