@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class UIDanger : MonoBehaviour
 {
-    List<Player> PlayerArray;
+    public List<Player> PlayerArray;
 
     GameObject[] UIArray = new GameObject[4];
 

@@ -31,10 +31,13 @@ public class Game : MonoBehaviour
 
     private void Start()
     {
-        Game.AudioSource.SetIntVar("musicvar", 1);
+        Game.AudioSource.SetIntVar("musicvar", 0);
         Game.AudioSource.Play("music");
 
         Game.AudioSource.Play("ambiente");
+
+        //Game.AudioSource.SetIntVar("sfxvar", 8);
+        //Game.AudioSource.Play("sfx");
     }
 
     void Update()
@@ -48,14 +51,25 @@ public class Game : MonoBehaviour
         Debug.Log("Player " + PlayerCount + " Joined");
         return PlayerCount;
 
-        Game.AudioSource.SetIntVar("uivar", 0);
+        Game.AudioSource.SetIntVar("uivar", 1);
         Game.AudioSource.Play("ui");
     }
 
     public void StartPressed()
     {
         if (Joining)
+        {
             Joining = false;
+            Game.AudioSource.StopTag("music");
+            StartCoroutine(PlayGameMusic());
+        }
+    }
+
+    IEnumerator PlayGameMusic()
+    {
+        yield return null;
+        Game.AudioSource.SetIntVar("musicvar", 1);
+        Game.AudioSource.Play("music");
     }
 
     public void PlayerDead(int _playerNumber)

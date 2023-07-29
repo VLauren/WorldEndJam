@@ -56,8 +56,8 @@
                         "type": 1,
                         "ID": 1,
                         "Name": "music menu",
-                        "Pos_x": 560.699951171875,
-                        "Pos_y": 85.5,
+                        "Pos_x": 455.0999450683594,
+                        "Pos_y": 60.70001220703125,
                         "Size_x": 200.0,
                         "Size_y": 100.0,
                         "can_be_deleted": true,
@@ -79,7 +79,9 @@
                         ],
                         "values": [
                             0.0,
-                            0.0
+                            0.0,
+                            12000.0,
+                            1.0
                         ]
                     },
                     {
@@ -149,8 +151,8 @@
                         "type": 1,
                         "ID": 3,
                         "Name": "music gameplay",
-                        "Pos_x": 547.1000366210938,
-                        "Pos_y": 260.70001220703127,
+                        "Pos_x": 451.90008544921877,
+                        "Pos_y": 237.50003051757813,
                         "Size_x": 200.0,
                         "Size_y": 100.0,
                         "can_be_deleted": true,
@@ -172,15 +174,17 @@
                         ],
                         "values": [
                             0.0,
-                            0.0
+                            0.0,
+                            19103.0,
+                            1.0
                         ]
                     },
                     {
                         "type": 16,
                         "ID": 4,
                         "Name": "musicvar",
-                        "Pos_x": 733.5,
-                        "Pos_y": -22.5,
+                        "Pos_x": 502.63873291015627,
+                        "Pos_y": -100.51687622070313,
                         "Size_x": 175.0,
                         "Size_y": 110.0,
                         "can_be_deleted": true,
@@ -1065,8 +1069,8 @@
                         "type": 16,
                         "ID": 6,
                         "Name": "uivar",
-                        "Pos_x": 301.42041015625,
-                        "Pos_y": -336.10711669921877,
+                        "Pos_x": -75.3878402709961,
+                        "Pos_y": -341.451904296875,
                         "Size_x": 175.0,
                         "Size_y": 110.0,
                         "can_be_deleted": true,
@@ -1179,15 +1183,27 @@
                 "size": 2819693
             },
             {
-                "id": 13832,
+                "id": 19103,
                 "bankFile": "KSB154221136690673008160DATA.krll",
                 "offsetBytes": 5843231,
+                "size": 2496086
+            },
+            {
+                "id": 12000,
+                "bankFile": "KSB154221136690673008160DATA.krll",
+                "offsetBytes": 8339317,
+                "size": 2874359
+            },
+            {
+                "id": 13832,
+                "bankFile": "KSB154221136690673008160DATA.krll",
+                "offsetBytes": 11213676,
                 "size": 23018
             },
             {
                 "id": 15751,
                 "bankFile": "KSB154221136690673008160DATA.krll",
-                "offsetBytes": 5866249,
+                "offsetBytes": 11236694,
                 "size": 10188
             }
         ],
@@ -1201,7 +1217,7 @@
                 "content": 0,
                 "range_min": 0.0,
                 "range_max": 1.0,
-                "set_only_on_play": false
+                "set_only_on_play": true
             },
             {
                 "variable_name": "sfxvar",
@@ -1225,13 +1241,13 @@
             },
             {
                 "variable_name": "uivar",
-                "current_value": 3.0,
+                "current_value": 0.0,
                 "type": 0,
                 "source": 2,
                 "content": 0,
                 "range_min": 0.0,
-                "range_max": 4.0,
-                "set_only_on_play": true
+                "range_max": 3.0,
+                "set_only_on_play": false
             }
         ],
         "channels": [
@@ -1258,6 +1274,6 @@
                 "buffer_size": 0
             }
         ],
-        "creation_time": 1690649907
+        "creation_time": 1690664344
     }
 }
