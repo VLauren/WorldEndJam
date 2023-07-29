@@ -18,6 +18,12 @@ public class UIDanger : MonoBehaviour
     public Slider sliderPlayer3;
 
     public Slider sliderPlayer4;
+
+    public GameObject PressToJoin;
+
+    public GameObject PressToStart;
+
+    public GameObject Winner;
     void Start()
     {
         UIArray[0] = GameObject.Find("J1");
@@ -37,6 +43,13 @@ public class UIDanger : MonoBehaviour
         sliderPlayer4 = UIArray[3].transform.GetChild(0).GetComponent<Slider>();
 
         PlayerArray = new List<Player>();
+
+        PressToJoin = GameObject.Find("Join");
+        PressToJoin.SetActive(false);
+        PressToStart = GameObject.Find("Start");
+        PressToStart.SetActive(false);
+        Winner = GameObject.Find("Winner");
+        Winner.SetActive(false);
     }
 
     void Update()
@@ -46,12 +59,34 @@ public class UIDanger : MonoBehaviour
             foreach (var player in FindObjectsOfType<Player>())
                 if (!PlayerArray.Contains(player))
                     PlayerArray.Add(player);
+
+            PressToJoin.SetActive(true);
+        }
+
+        if (!Game.Instance.Joining)
+        {
+            PressToJoin.SetActive(false);
+            PressToStart.SetActive(false);
+        }
+
+        if (Game.Instance.GameEnd)
+        {
+            Winner.SetActive(true);
+        }
+        else
+        {
+            Winner.SetActive(false);
         }
 
         if (PlayerArray.Count >= 1)
         {
             UIArray[0].SetActive(true);
             sliderPlayer1.value = PlayerArray[0].ReceivedDamage;
+
+            if (PressToJoin.activeSelf)
+            {
+                PressToStart.SetActive(true);
+            }
         }
 
         if (PlayerArray.Count >= 2)
@@ -70,6 +105,8 @@ public class UIDanger : MonoBehaviour
         {
             UIArray[3].SetActive(true);
             sliderPlayer4.value = PlayerArray[3].ReceivedDamage;
+
+            PressToJoin.SetActive(false);
         }
     }
 }
