@@ -9,6 +9,10 @@ public class Player : MonoBehaviour
     public float Acceleration;
     public float Deceleration;
 
+    [Space()]
+    public Vector2 XMovLimits;
+    public Vector2 ZMovLimits;
+
     Vector3 Velocity;
 
     Vector2 InputDir;
@@ -34,6 +38,11 @@ public class Player : MonoBehaviour
 
             if (transform.position.x > 44)
                 Dead = true;
+
+            Vector3 pos = transform.position;
+            pos.x = Mathf.Clamp(pos.x, XMovLimits.x, XMovLimits.y);
+            pos.z = Mathf.Clamp(pos.z, ZMovLimits.x, ZMovLimits.y);
+            transform.position = pos;
         }
 
         transform.position += Velocity * Time.deltaTime;
