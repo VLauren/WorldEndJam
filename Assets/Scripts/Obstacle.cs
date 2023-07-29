@@ -28,6 +28,8 @@ public class Obstacle : MonoBehaviour
             other.GetComponent<Player>().ApplyDamage(Damage);
 
             other.GetComponent<Player>().AddImpulse(impulse);
+
+            other.GetComponent<Player>().AddScaledImpulse(impulse);
         }
 
     }

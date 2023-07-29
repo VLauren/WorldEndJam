@@ -112,3 +112,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementDirection: {x: 0, y: 0, z: -5}
   impulse: {x: 10, y: 0, z: 0}
+  Damage: 1
