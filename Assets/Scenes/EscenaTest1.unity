@@ -824,6 +824,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4261694508324364978, guid: 527d6d58718e3cc4d867d69102ec2875, type: 3}
+      propertyPath: impulse.x
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4261694508324364979, guid: 527d6d58718e3cc4d867d69102ec2875, type: 3}
       propertyPath: m_IsTrigger
       value: 1
