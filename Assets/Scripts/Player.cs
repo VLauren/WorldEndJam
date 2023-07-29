@@ -43,11 +43,11 @@ public class Player : MonoBehaviour
 
         transform.GetChild(PlayerNumber).gameObject.SetActive(true);
         Model = transform.GetChild(PlayerNumber);
+        transform.Find("Trail").gameObject.SetActive(false);
     }
 
     void Update()
     {
-
         // =================
         // Rotacion de modelo
         Model.Rotate(new Vector3(Time.deltaTime * Mathf.Sin(Time.time * 3) * 20, 0, 0));
@@ -90,6 +90,8 @@ public class Player : MonoBehaviour
                 Winner = true;
                 Debug.Log("PLAYER " + PlayerNumber + " WINS!!!");
             }
+
+            transform.Find("Trail").gameObject.SetActive(true);
 
             if (transform.position.x > 47.5f)
             {
