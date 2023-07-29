@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
     public float Acceleration;
     public float Deceleration;
 
+    public int ReceivedDamage = 0;
+
     [Space()]
     public Vector2 XMovLimits;
     public Vector2 ZMovLimits;
@@ -64,7 +66,7 @@ public class Player : MonoBehaviour
 
     public void ApplyDamage(int _damage)
     {
-
+        ReceivedDamage += _damage;
     }
 
     public void AddImpulse(Vector3 _impulse)
@@ -81,6 +83,15 @@ public class Player : MonoBehaviour
 
             other.GetComponent<Player>().AddImpulse(dir * Game.BoatCollisionPush);
             AddImpulse(-dir * Game.BoatCollisionPush);
+            other.GetComponent<Player>().AddScaledImpulse(dir * Game.BoatCollisionScaledPush);
+            AddScaledImpulse(-dir * Game.BoatCollisionScaledPush);
+            other.GetComponent<Player>().ApplyDamage(Game.BoatCollisionDamage);
+            ApplyDamage(Game.BoatCollisionDamage);
         }
+    }
+
+    public void AddScaledImpulse(Vector3 _impulse)
+    {
+        Velocity = _impulse * ReceivedDamage;
     }
 }
