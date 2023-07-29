@@ -25,7 +25,6 @@ public class Game : MonoBehaviour
 
     private void Start()
     {
-
     }
 
     void Update()

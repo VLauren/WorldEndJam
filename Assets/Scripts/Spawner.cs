@@ -8,14 +8,15 @@ public class Spawner : MonoBehaviour
 
     public float ObstacleSpawnRate = 0.3f;
 
-    void Start()
-    {
-        InvokeRepeating("SpawnObstacle", 2, 1f / ObstacleSpawnRate);
-    }
+    bool Started;
 
     void Update()
     {
-
+        if(!Started && !Game.Instance.Joining)
+        {
+            Started = true;
+            InvokeRepeating("SpawnObstacle", 2, 1f / ObstacleSpawnRate);
+        }
     }
 
     private void OnDrawGizmos()
@@ -35,7 +36,5 @@ public class Spawner : MonoBehaviour
         float RandomZ = Random.Range((transform.localScale.z * -1) / 2, transform.localScale.z / 2);
 
         Instantiate(Obstacle01Prefab, transform.position + new Vector3(RandomX, 0, RandomZ), Quaternion.identity);
-
-
     }
 }
