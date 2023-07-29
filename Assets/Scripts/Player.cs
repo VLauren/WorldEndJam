@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -20,13 +21,26 @@ public class Player : MonoBehaviour
     Vector2 InputDir;
 
     bool Dead;
+    int PlayerNumber;
 
-    void Start()
+    void Awake()
     {
+        PlayerNumber = Game.Instance.OnPlayerJoined(this);
+    }
+    private void Start()
+    {
+        transform.position = new Vector3(15 + PlayerNumber * 6, 2.85f, -27.55f);
+        transform.rotation = Quaternion.Euler(0, 90, 0);
     }
 
     void Update()
     {
+        // Si estoy iniciando la partida, no hago nada
+        if (Game.Instance.Joining)
+        {
+            return;
+        }
+
         if (Dead)
         {
             Velocity = Vector3.MoveTowards(Velocity, new Vector3(0, -100, 0), Time.deltaTime * Deceleration);
@@ -38,13 +52,22 @@ public class Player : MonoBehaviour
             else
                 Velocity = Vector3.MoveTowards(Velocity, MaxSpeed * new Vector3(InputDir.x, 0, InputDir.y), Time.deltaTime * Acceleration);
 
-            if (transform.position.x > 44)
-                Dead = true;
-
             Vector3 pos = transform.position;
             pos.x = Mathf.Clamp(pos.x, XMovLimits.x, XMovLimits.y);
             pos.z = Mathf.Clamp(pos.z, ZMovLimits.x, ZMovLimits.y);
             transform.position = pos;
+
+            if(Game.Instance.GameEnd)
+            {
+                Dead = true;
+                Debug.Log("PLAYER " + PlayerNumber + " WINS!!!");
+            }
+
+            if (transform.position.x > 44)
+            {
+                Dead = true;
+                Game.Instance.PlayerDead(PlayerNumber);
+            }
         }
 
         transform.position += Velocity * Time.deltaTime;
@@ -62,6 +85,11 @@ public class Player : MonoBehaviour
     void OnMove(InputValue value)
     {
         InputDir = value.Get<Vector2>();
+    }
+
+    void OnStart(InputValue value)
+    {
+        Game.Instance.StartPressed();
     }
 
     public void ApplyDamage(int _damage)
