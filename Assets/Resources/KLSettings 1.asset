@@ -67,12 +67,12 @@ MonoBehaviour:
       max: 9
       sourceContract: 2
     - name: uivar
-      defaultValue: 3
+      defaultValue: 0
       isGlobal: 0
       source: 2
       content: 0
       min: 0
-      max: 4
+      max: 3
       sourceContract: 2
     soundbank_files: []
     channels: []

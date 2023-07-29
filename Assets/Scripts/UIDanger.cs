@@ -46,11 +46,11 @@ public class UIDanger : MonoBehaviour
 
         PlayerArray = new List<Player>();
 
-        PressToJoin = GameObject.Find("Join");
+        PressToJoin = transform.Find("Join").gameObject;
         PressToJoin.SetActive(false);
-        PressToStart = GameObject.Find("Start");
+        PressToStart = transform.Find("Start").gameObject;
         PressToStart.SetActive(false);
-        Winner = GameObject.Find("Winner");
+        Winner = transform.Find("Winner").gameObject;
         Winner.SetActive(false);
     }
 
