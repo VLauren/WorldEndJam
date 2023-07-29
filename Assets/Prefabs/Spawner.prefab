@@ -53,3 +53,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 482ab6f5f9ab4a8488076cae05a57ee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Obstacle01Prefab: {fileID: 0}
+  ObstacleSpawnRate: 5
