@@ -23,6 +23,8 @@ public class UIDanger : MonoBehaviour
 
     public GameObject PressToStart;
 
+    public int PlayerNumber;
+
     public GameObject Winner;
     void Start()
     {
@@ -107,6 +109,14 @@ public class UIDanger : MonoBehaviour
             sliderPlayer4.value = PlayerArray[3].ReceivedDamage;
 
             PressToJoin.SetActive(false);
+        }
+
+        foreach (Player player in PlayerArray)
+        {
+            if (player.Winner == true)
+            {
+                PlayerNumber = player.PlayerNumber;
+            }
         }
     }
 }

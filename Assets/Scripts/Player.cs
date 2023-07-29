@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
 
     Vector3 Velocity;
     Vector2 InputDir;
-    bool Dead, Winner;
+    public bool Dead, Winner;
     public int PlayerNumber;
 
     float DashCDCounter;
@@ -55,9 +55,9 @@ public class Player : MonoBehaviour
         Model.Rotate(new Vector3(0, 0, Time.deltaTime * Mathf.Sin(Time.time * 4) * 20));
         Model.transform.position += new Vector3(0, Time.deltaTime * Mathf.Sin(Time.time * 4) * 0.7f, 0);
 
-        if(Dead)
+        if (Dead)
         {
-            Model.Rotate(new Vector3(2,1,1.5f) * Time.deltaTime * 90);
+            Model.Rotate(new Vector3(2, 1, 1.5f) * Time.deltaTime * 90);
         }
 
         // =================
