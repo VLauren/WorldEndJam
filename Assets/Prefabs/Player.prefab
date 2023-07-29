@@ -117,8 +117,9 @@ MonoBehaviour:
   MaxSpeed: 8
   Acceleration: 20
   Deceleration: 20
-  XMovLimits: {x: 15, y: 50}
-  ZMovLimits: {x: -36, y: -12}
+  ReceivedDamage: 0
+  XMovLimits: {x: -4, y: 50}
+  ZMovLimits: {x: -40, y: 20}
 --- !u!114 &-8270495698009729364
 MonoBehaviour:
   m_ObjectHideFlags: 0

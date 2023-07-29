@@ -83,6 +83,10 @@ public class Player : MonoBehaviour
 
             other.GetComponent<Player>().AddImpulse(dir * Game.BoatCollisionPush);
             AddImpulse(-dir * Game.BoatCollisionPush);
+            other.GetComponent<Player>().AddScaledImpulse(dir * Game.BoatCollisionScaledPush);
+            AddScaledImpulse(-dir * Game.BoatCollisionScaledPush);
+            other.GetComponent<Player>().ApplyDamage(Game.BoatCollisionDamage);
+            ApplyDamage(Game.BoatCollisionDamage);
         }
     }
 
