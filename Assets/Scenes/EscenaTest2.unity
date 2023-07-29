@@ -153,6 +153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Joining: 1
+  GameEnd: 0
+  PlayerCount: 0
 --- !u!4 &65691194
 Transform:
   m_ObjectHideFlags: 0
@@ -756,6 +758,10 @@ PrefabInstance:
     - target: {fileID: 4966536782715893230, guid: 22268292d4c2b1646b649ad24ee947df, type: 3}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4966536782715893230, guid: 22268292d4c2b1646b649ad24ee947df, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 15.14972
       objectReference: {fileID: 0}
     - target: {fileID: 4966536782715893230, guid: 22268292d4c2b1646b649ad24ee947df, type: 3}
       propertyPath: m_LocalPosition.x

@@ -31,6 +31,8 @@ public class Player : MonoBehaviour
     {
         transform.position = new Vector3(15 + PlayerNumber * 6, 2.85f, -27.55f);
         transform.rotation = Quaternion.Euler(0, 90, 0);
+
+        transform.GetChild(PlayerNumber).gameObject.SetActive(true);
     }
 
     void Update()
