@@ -16,12 +16,18 @@ public class Player : MonoBehaviour
     public Vector2 XMovLimits;
     public Vector2 ZMovLimits;
 
+    [Space()]
+    public float DashCooldown = 1;
+    public float DashTime = 0.2f;
+    public float DashSpeed = 20;
+
     Vector3 Velocity;
-
     Vector2 InputDir;
-
     bool Dead, Winner;
     int PlayerNumber;
+
+    float DashCDCounter;
+    bool Dashing;
 
     void Awake()
     {
@@ -95,6 +101,38 @@ public class Player : MonoBehaviour
         Game.Instance.StartPressed();
     }
 
+
+    void OnDash(InputValue value)
+    {
+        if(!Dead && !Game.Instance.Joining && DashCDCounter <= 0 && InputDir != Vector2.zero)
+        {
+            StartCoroutine(DashRoutine());
+        }
+    }
+
+    IEnumerator DashRoutine()
+    {
+        DashCDCounter = DashCooldown;
+        float dashTimeCount = 0;
+        Vector3 dashDir = new Vector3(InputDir.x, 0, InputDir.y);
+
+        while (DashCDCounter > 0)
+        {
+            DashCDCounter -= Time.deltaTime;
+            dashTimeCount += Time.deltaTime;
+
+            if (dashTimeCount < DashTime)
+            {
+                Dashing = true;
+                transform.position += dashDir * DashSpeed * Time.deltaTime;
+            }
+            else
+                Dashing = false;
+
+            yield return null;
+        }
+    }
+
     public void ApplyDamage(int _damage)
     {
         ReceivedDamage += _damage;
@@ -112,12 +150,19 @@ public class Player : MonoBehaviour
             Vector3 dir = other.transform.position - transform.position;
             dir.Normalize();
 
-            other.GetComponent<Player>().AddImpulse(dir * Game.BoatCollisionPush);
-            AddImpulse(-dir * Game.BoatCollisionPush);
-            other.GetComponent<Player>().AddScaledImpulse(dir * Game.BoatCollisionScaledPush);
-            AddScaledImpulse(-dir * Game.BoatCollisionScaledPush);
-            other.GetComponent<Player>().ApplyDamage(Game.BoatCollisionDamage);
-            ApplyDamage(Game.BoatCollisionDamage);
+            if(!other.GetComponent<Player>().Dashing)
+            {
+                other.GetComponent<Player>().AddImpulse(dir * Game.BoatCollisionPush);
+                other.GetComponent<Player>().AddScaledImpulse(dir * Game.BoatCollisionScaledPush);
+                other.GetComponent<Player>().ApplyDamage(Game.BoatCollisionDamage);
+            }
+
+            if (!Dashing)
+            {
+                AddImpulse(-dir * Game.BoatCollisionPush);
+                AddScaledImpulse(-dir * Game.BoatCollisionScaledPush);
+                ApplyDamage(Game.BoatCollisionDamage);
+            }
         }
     }
 
