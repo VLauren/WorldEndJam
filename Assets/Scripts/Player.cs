@@ -50,11 +50,15 @@ public class Player : MonoBehaviour
 
         // =================
         // Rotacion de modelo
-        // print(Model + " " + Model.localRotation);
         Model.Rotate(new Vector3(Time.deltaTime * Mathf.Sin(Time.time * 3) * 20, 0, 0));
         Model.Rotate(new Vector3(0, Time.deltaTime * Mathf.Sin(Time.time * 2) * 20, 0));
         Model.Rotate(new Vector3(0, 0, Time.deltaTime * Mathf.Sin(Time.time * 4) * 20));
         Model.transform.position += new Vector3(0, Time.deltaTime * Mathf.Sin(Time.time * 4) * 0.7f, 0);
+
+        if(Dead)
+        {
+            Model.Rotate(new Vector3(2,1,1.5f) * Time.deltaTime * 90);
+        }
 
         // =================
         // Movimiento
@@ -91,6 +95,7 @@ public class Player : MonoBehaviour
             {
                 Dead = true;
                 Game.Instance.PlayerDead(PlayerNumber);
+                transform.Find("Trail").gameObject.SetActive(false);
             }
         }
 
