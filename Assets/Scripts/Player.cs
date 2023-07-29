@@ -98,6 +98,9 @@ public class Player : MonoBehaviour
                 Dead = true;
                 Game.Instance.PlayerDead(PlayerNumber);
                 transform.Find("Trail").gameObject.SetActive(false);
+
+                Game.AudioSource.SetIntVar("sfxvar", (PlayerNumber - 1) * 2);
+                Game.AudioSource.Play("sfx");
             }
         }
 
@@ -166,6 +169,9 @@ public class Player : MonoBehaviour
         ReceivedDamage += _damage;
 
         EdgeCamera.CameraShake(0.5f, 0.3f);
+
+        Game.AudioSource.SetIntVar("sfxvar", (PlayerNumber - 1) * 2 + 1);
+        Game.AudioSource.Play("sfx");
     }
 
     public void AddImpulse(Vector3 _impulse)

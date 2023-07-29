@@ -1,0 +1,1263 @@
+{
+    "value0": {
+        "cereal_class_version": 20201222,
+        "project_path": "C:\\KRILLAUDIO\\WORKS\\MALAGAJAM16\\Laurent\\fin_del_mundo_laurent_krilloud",
+        "game_path": "C:\\KRILLAUDIO\\WORKS\\MALAGAJAM16\\Laurent\\fin_del_mundo_laurent_krilloud",
+        "project_name": "fin_del_mundo_laurent",
+        "tags": [
+            {
+                "cereal_class_version": 20191030,
+                "tagname": "music",
+                "is3Dtag": false,
+                "Min3DDistance": 1.0,
+                "Max3DDistance": 2.0,
+                "roll_off_factor": 1.0,
+                "attenuationType": 0,
+                "distance_delay": false,
+                "doppler_active": false,
+                "doppler_factor": 1.0,
+                "isLoopable": true,
+                "channel_id": 0,
+                "levelName": "Root",
+                "associated_ID": -1,
+                "gids": 4,
+                "graphNodes_info": [
+                    {
+                        "cereal_class_version": 20201222,
+                        "type": 18,
+                        "ID": 0,
+                        "Name": "Output",
+                        "Pos_x": 1036.800048828125,
+                        "Pos_y": 193.60000610351563,
+                        "Size_x": 100.0,
+                        "Size_y": 50.0,
+                        "can_be_deleted": false,
+                        "inputsCount": 1,
+                        "outputsCount": 0,
+                        "sockets": [
+                            {
+                                "cereal_class_version": 20191030,
+                                "SocketID": 0,
+                                "connection_type": 0,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "cereal_class_version": 20191030,
+                                        "my_socket_id": 0,
+                                        "connected_node_id": 2,
+                                        "connected_node_socket_id": 1
+                                    }
+                                ]
+                            }
+                        ],
+                        "values": []
+                    },
+                    {
+                        "type": 1,
+                        "ID": 1,
+                        "Name": "music menu",
+                        "Pos_x": 560.699951171875,
+                        "Pos_y": 85.5,
+                        "Size_x": 200.0,
+                        "Size_y": 100.0,
+                        "can_be_deleted": true,
+                        "inputsCount": 0,
+                        "outputsCount": 1,
+                        "sockets": [
+                            {
+                                "SocketID": 0,
+                                "connection_type": 1,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 0,
+                                        "connected_node_id": 2,
+                                        "connected_node_socket_id": 2
+                                    }
+                                ]
+                            }
+                        ],
+                        "values": [
+                            0.0,
+                            0.0
+                        ]
+                    },
+                    {
+                        "type": 20,
+                        "ID": 2,
+                        "Name": "Selector",
+                        "Pos_x": 836.699951171875,
+                        "Pos_y": 207.0999755859375,
+                        "Size_x": 200.0,
+                        "Size_y": 100.0,
+                        "can_be_deleted": true,
+                        "inputsCount": 3,
+                        "outputsCount": 1,
+                        "sockets": [
+                            {
+                                "SocketID": 0,
+                                "connection_type": 0,
+                                "data_type": 1,
+                                "links": [
+                                    {
+                                        "my_socket_id": 0,
+                                        "connected_node_id": 4,
+                                        "connected_node_socket_id": 0
+                                    }
+                                ]
+                            },
+                            {
+                                "SocketID": 3,
+                                "connection_type": 1,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 3,
+                                        "connected_node_id": 0,
+                                        "connected_node_socket_id": 0
+                                    }
+                                ]
+                            },
+                            {
+                                "SocketID": 1,
+                                "connection_type": 0,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 1,
+                                        "connected_node_id": 1,
+                                        "connected_node_socket_id": 0
+                                    }
+                                ]
+                            },
+                            {
+                                "SocketID": 2,
+                                "connection_type": 0,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 2,
+                                        "connected_node_id": 3,
+                                        "connected_node_socket_id": 0
+                                    }
+                                ]
+                            }
+                        ],
+                        "values": []
+                    },
+                    {
+                        "type": 1,
+                        "ID": 3,
+                        "Name": "music gameplay",
+                        "Pos_x": 547.1000366210938,
+                        "Pos_y": 260.70001220703127,
+                        "Size_x": 200.0,
+                        "Size_y": 100.0,
+                        "can_be_deleted": true,
+                        "inputsCount": 0,
+                        "outputsCount": 1,
+                        "sockets": [
+                            {
+                                "SocketID": 0,
+                                "connection_type": 1,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 0,
+                                        "connected_node_id": 2,
+                                        "connected_node_socket_id": 3
+                                    }
+                                ]
+                            }
+                        ],
+                        "values": [
+                            0.0,
+                            0.0
+                        ]
+                    },
+                    {
+                        "type": 16,
+                        "ID": 4,
+                        "Name": "musicvar",
+                        "Pos_x": 733.5,
+                        "Pos_y": -22.5,
+                        "Size_x": 175.0,
+                        "Size_y": 110.0,
+                        "can_be_deleted": true,
+                        "inputsCount": 0,
+                        "outputsCount": 1,
+                        "sockets": [
+                            {
+                                "SocketID": 0,
+                                "connection_type": 1,
+                                "data_type": 1,
+                                "links": [
+                                    {
+                                        "my_socket_id": 0,
+                                        "connected_node_id": 2,
+                                        "connected_node_socket_id": 0
+                                    }
+                                ]
+                            }
+                        ],
+                        "values": [
+                            0.0,
+                            2.0,
+                            1.0,
+                            0.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "graphLevels_info": []
+            },
+            {
+                "tagname": "sfx",
+                "is3Dtag": true,
+                "Min3DDistance": 1.0,
+                "Max3DDistance": 2.0,
+                "roll_off_factor": 1.0,
+                "attenuationType": 0,
+                "distance_delay": false,
+                "doppler_active": false,
+                "doppler_factor": 0.0,
+                "isLoopable": false,
+                "channel_id": 0,
+                "levelName": "Root",
+                "associated_ID": -1,
+                "gids": 13,
+                "graphNodes_info": [
+                    {
+                        "type": 18,
+                        "ID": 0,
+                        "Name": "Output",
+                        "Pos_x": 1070.65869140625,
+                        "Pos_y": 263.86041259765627,
+                        "Size_x": 100.0,
+                        "Size_y": 50.0,
+                        "can_be_deleted": false,
+                        "inputsCount": 1,
+                        "outputsCount": 0,
+                        "sockets": [
+                            {
+                                "SocketID": 0,
+                                "connection_type": 0,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 0,
+                                        "connected_node_id": 3,
+                                        "connected_node_socket_id": 1
+                                    }
+                                ]
+                            }
+                        ],
+                        "values": []
+                    },
+                    {
+                        "type": 1,
+                        "ID": 1,
+                        "Name": "cae1",
+                        "Pos_x": 0.4000244140625,
+                        "Pos_y": -190.39999389648438,
+                        "Size_x": 200.0,
+                        "Size_y": 100.0,
+                        "can_be_deleted": true,
+                        "inputsCount": 0,
+                        "outputsCount": 1,
+                        "sockets": [
+                            {
+                                "SocketID": 0,
+                                "connection_type": 1,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 0,
+                                        "connected_node_id": 3,
+                                        "connected_node_socket_id": 2
+                                    }
+                                ]
+                            }
+                        ],
+                        "values": [
+                            0.0,
+                            0.0,
+                            5085.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "type": 1,
+                        "ID": 2,
+                        "Name": "choca1",
+                        "Pos_x": 8.4000244140625,
+                        "Pos_y": -23.399988174438478,
+                        "Size_x": 200.0,
+                        "Size_y": 100.0,
+                        "can_be_deleted": true,
+                        "inputsCount": 0,
+                        "outputsCount": 1,
+                        "sockets": [
+                            {
+                                "SocketID": 0,
+                                "connection_type": 1,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 0,
+                                        "connected_node_id": 3,
+                                        "connected_node_socket_id": 3
+                                    }
+                                ]
+                            }
+                        ],
+                        "values": [
+                            0.0,
+                            0.0,
+                            7375.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "type": 20,
+                        "ID": 3,
+                        "Name": "Selector",
+                        "Pos_x": 510.33001708984377,
+                        "Pos_y": 261.696044921875,
+                        "Size_x": 200.0,
+                        "Size_y": 100.0,
+                        "can_be_deleted": true,
+                        "inputsCount": 10,
+                        "outputsCount": 1,
+                        "sockets": [
+                            {
+                                "SocketID": 0,
+                                "connection_type": 0,
+                                "data_type": 1,
+                                "links": [
+                                    {
+                                        "my_socket_id": 0,
+                                        "connected_node_id": 11,
+                                        "connected_node_socket_id": 0
+                                    }
+                                ]
+                            },
+                            {
+                                "SocketID": 3,
+                                "connection_type": 1,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 3,
+                                        "connected_node_id": 0,
+                                        "connected_node_socket_id": 0
+                                    }
+                                ]
+                            },
+                            {
+                                "SocketID": 1,
+                                "connection_type": 0,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 1,
+                                        "connected_node_id": 1,
+                                        "connected_node_socket_id": 0
+                                    }
+                                ]
+                            },
+                            {
+                                "SocketID": 2,
+                                "connection_type": 0,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 2,
+                                        "connected_node_id": 2,
+                                        "connected_node_socket_id": 0
+                                    }
+                                ]
+                            },
+                            {
+                                "SocketID": 4,
+                                "connection_type": 0,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 4,
+                                        "connected_node_id": 4,
+                                        "connected_node_socket_id": 0
+                                    }
+                                ]
+                            },
+                            {
+                                "SocketID": 5,
+                                "connection_type": 0,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 5,
+                                        "connected_node_id": 5,
+                                        "connected_node_socket_id": 0
+                                    }
+                                ]
+                            },
+                            {
+                                "SocketID": 6,
+                                "connection_type": 0,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 6,
+                                        "connected_node_id": 6,
+                                        "connected_node_socket_id": 0
+                                    }
+                                ]
+                            },
+                            {
+                                "SocketID": 7,
+                                "connection_type": 0,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 7,
+                                        "connected_node_id": 7,
+                                        "connected_node_socket_id": 0
+                                    }
+                                ]
+                            },
+                            {
+                                "SocketID": 8,
+                                "connection_type": 0,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 8,
+                                        "connected_node_id": 8,
+                                        "connected_node_socket_id": 0
+                                    }
+                                ]
+                            },
+                            {
+                                "SocketID": 9,
+                                "connection_type": 0,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 9,
+                                        "connected_node_id": 9,
+                                        "connected_node_socket_id": 0
+                                    }
+                                ]
+                            },
+                            {
+                                "SocketID": 10,
+                                "connection_type": 0,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 10,
+                                        "connected_node_id": 10,
+                                        "connected_node_socket_id": 0
+                                    }
+                                ]
+                            }
+                        ],
+                        "values": []
+                    },
+                    {
+                        "type": 1,
+                        "ID": 4,
+                        "Name": "cae2",
+                        "Pos_x": 4.4000244140625,
+                        "Pos_y": 144.60000610351563,
+                        "Size_x": 200.0,
+                        "Size_y": 100.0,
+                        "can_be_deleted": true,
+                        "inputsCount": 0,
+                        "outputsCount": 1,
+                        "sockets": [
+                            {
+                                "SocketID": 0,
+                                "connection_type": 1,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 0,
+                                        "connected_node_id": 3,
+                                        "connected_node_socket_id": 4
+                                    }
+                                ]
+                            }
+                        ],
+                        "values": [
+                            0.0,
+                            0.0,
+                            5087.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "type": 1,
+                        "ID": 5,
+                        "Name": "choca2",
+                        "Pos_x": 10.03345012664795,
+                        "Pos_y": 337.0707702636719,
+                        "Size_x": 200.0,
+                        "Size_y": 100.0,
+                        "can_be_deleted": true,
+                        "inputsCount": 0,
+                        "outputsCount": 1,
+                        "sockets": [
+                            {
+                                "SocketID": 0,
+                                "connection_type": 1,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 0,
+                                        "connected_node_id": 3,
+                                        "connected_node_socket_id": 5
+                                    }
+                                ]
+                            }
+                        ],
+                        "values": [
+                            0.0,
+                            0.0,
+                            7377.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "type": 1,
+                        "ID": 6,
+                        "Name": "cae3",
+                        "Pos_x": 8.762617111206055,
+                        "Pos_y": 489.5706787109375,
+                        "Size_x": 200.0,
+                        "Size_y": 100.0,
+                        "can_be_deleted": true,
+                        "inputsCount": 0,
+                        "outputsCount": 1,
+                        "sockets": [
+                            {
+                                "SocketID": 0,
+                                "connection_type": 1,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 0,
+                                        "connected_node_id": 3,
+                                        "connected_node_socket_id": 6
+                                    }
+                                ]
+                            }
+                        ],
+                        "values": [
+                            0.0,
+                            0.0,
+                            5089.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "type": 1,
+                        "ID": 7,
+                        "Name": "choca3",
+                        "Pos_x": 19.47210121154785,
+                        "Pos_y": 646.2666015625,
+                        "Size_x": 200.0,
+                        "Size_y": 100.0,
+                        "can_be_deleted": true,
+                        "inputsCount": 0,
+                        "outputsCount": 1,
+                        "sockets": [
+                            {
+                                "SocketID": 0,
+                                "connection_type": 1,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 0,
+                                        "connected_node_id": 3,
+                                        "connected_node_socket_id": 7
+                                    }
+                                ]
+                            }
+                        ],
+                        "values": [
+                            0.0,
+                            0.0,
+                            7379.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "type": 1,
+                        "ID": 8,
+                        "Name": "cae4",
+                        "Pos_x": 47.54026412963867,
+                        "Pos_y": 819.3671264648438,
+                        "Size_x": 200.0,
+                        "Size_y": 100.0,
+                        "can_be_deleted": true,
+                        "inputsCount": 0,
+                        "outputsCount": 1,
+                        "sockets": [
+                            {
+                                "SocketID": 0,
+                                "connection_type": 1,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 0,
+                                        "connected_node_id": 3,
+                                        "connected_node_socket_id": 8
+                                    }
+                                ]
+                            }
+                        ],
+                        "values": [
+                            0.0,
+                            0.0,
+                            5091.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "type": 1,
+                        "ID": 9,
+                        "Name": "choca4",
+                        "Pos_x": 171.08712768554688,
+                        "Pos_y": 989.509765625,
+                        "Size_x": 200.0,
+                        "Size_y": 100.0,
+                        "can_be_deleted": true,
+                        "inputsCount": 0,
+                        "outputsCount": 1,
+                        "sockets": [
+                            {
+                                "SocketID": 0,
+                                "connection_type": 1,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 0,
+                                        "connected_node_id": 3,
+                                        "connected_node_socket_id": 9
+                                    }
+                                ]
+                            }
+                        ],
+                        "values": [
+                            0.0,
+                            0.0,
+                            7381.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "type": 1,
+                        "ID": 10,
+                        "Name": "cae torre",
+                        "Pos_x": 407.740966796875,
+                        "Pos_y": 1083.6693115234376,
+                        "Size_x": 200.0,
+                        "Size_y": 100.0,
+                        "can_be_deleted": true,
+                        "inputsCount": 0,
+                        "outputsCount": 1,
+                        "sockets": [
+                            {
+                                "SocketID": 0,
+                                "connection_type": 1,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 0,
+                                        "connected_node_id": 3,
+                                        "connected_node_socket_id": 10
+                                    }
+                                ]
+                            }
+                        ],
+                        "values": [
+                            0.0,
+                            0.0,
+                            12022.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "type": 16,
+                        "ID": 11,
+                        "Name": "sfxvar",
+                        "Pos_x": 478.9333190917969,
+                        "Pos_y": -98.24187469482422,
+                        "Size_x": 175.0,
+                        "Size_y": 110.0,
+                        "can_be_deleted": true,
+                        "inputsCount": 0,
+                        "outputsCount": 1,
+                        "sockets": [
+                            {
+                                "SocketID": 0,
+                                "connection_type": 1,
+                                "data_type": 1,
+                                "links": [
+                                    {
+                                        "my_socket_id": 0,
+                                        "connected_node_id": 3,
+                                        "connected_node_socket_id": 0
+                                    }
+                                ]
+                            }
+                        ],
+                        "values": [
+                            0.0,
+                            2.0,
+                            1.0,
+                            0.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "graphLevels_info": []
+            },
+            {
+                "tagname": "ambiente",
+                "is3Dtag": true,
+                "Min3DDistance": 1.0,
+                "Max3DDistance": 2.0,
+                "roll_off_factor": 1.0,
+                "attenuationType": 0,
+                "distance_delay": false,
+                "doppler_active": false,
+                "doppler_factor": 0.0,
+                "isLoopable": true,
+                "channel_id": 0,
+                "levelName": "Root",
+                "associated_ID": -1,
+                "gids": 1,
+                "graphNodes_info": [
+                    {
+                        "type": 18,
+                        "ID": 0,
+                        "Name": "Output",
+                        "Pos_x": 800.0,
+                        "Pos_y": 200.0,
+                        "Size_x": 100.0,
+                        "Size_y": 50.0,
+                        "can_be_deleted": false,
+                        "inputsCount": 1,
+                        "outputsCount": 0,
+                        "sockets": [
+                            {
+                                "SocketID": 0,
+                                "connection_type": 0,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 0,
+                                        "connected_node_id": 1,
+                                        "connected_node_socket_id": 0
+                                    }
+                                ]
+                            }
+                        ],
+                        "values": []
+                    },
+                    {
+                        "type": 1,
+                        "ID": 1,
+                        "Name": "Audio Container",
+                        "Pos_x": 22.4000244140625,
+                        "Pos_y": -46.399986267089847,
+                        "Size_x": 200.0,
+                        "Size_y": 100.0,
+                        "can_be_deleted": true,
+                        "inputsCount": 0,
+                        "outputsCount": 1,
+                        "sockets": [
+                            {
+                                "SocketID": 0,
+                                "connection_type": 1,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 0,
+                                        "connected_node_id": 0,
+                                        "connected_node_socket_id": 0
+                                    }
+                                ]
+                            }
+                        ],
+                        "values": [
+                            0.0,
+                            0.0,
+                            19097.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "graphLevels_info": []
+            },
+            {
+                "tagname": "ui",
+                "is3Dtag": false,
+                "Min3DDistance": 1.0,
+                "Max3DDistance": 2.0,
+                "roll_off_factor": 1.0,
+                "attenuationType": 0,
+                "distance_delay": false,
+                "doppler_active": false,
+                "doppler_factor": 0.0,
+                "isLoopable": false,
+                "channel_id": 0,
+                "levelName": "Root",
+                "associated_ID": -1,
+                "gids": 6,
+                "graphNodes_info": [
+                    {
+                        "type": 18,
+                        "ID": 0,
+                        "Name": "Output",
+                        "Pos_x": 706.9000854492188,
+                        "Pos_y": -29.4999942779541,
+                        "Size_x": 100.0,
+                        "Size_y": 50.0,
+                        "can_be_deleted": false,
+                        "inputsCount": 1,
+                        "outputsCount": 0,
+                        "sockets": [
+                            {
+                                "SocketID": 0,
+                                "connection_type": 0,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 0,
+                                        "connected_node_id": 5,
+                                        "connected_node_socket_id": 1
+                                    }
+                                ]
+                            }
+                        ],
+                        "values": []
+                    },
+                    {
+                        "type": 1,
+                        "ID": 1,
+                        "Name": "select player",
+                        "Pos_x": -0.5999755859375,
+                        "Pos_y": -176.39999389648438,
+                        "Size_x": 200.0,
+                        "Size_y": 100.0,
+                        "can_be_deleted": true,
+                        "inputsCount": 0,
+                        "outputsCount": 1,
+                        "sockets": [
+                            {
+                                "SocketID": 0,
+                                "connection_type": 1,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 0,
+                                        "connected_node_id": 5,
+                                        "connected_node_socket_id": 2
+                                    }
+                                ]
+                            }
+                        ],
+                        "values": [
+                            0.0,
+                            0.0,
+                            15751.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "type": 1,
+                        "ID": 2,
+                        "Name": "powerup coge",
+                        "Pos_x": -3.5999755859375,
+                        "Pos_y": 9.600011825561524,
+                        "Size_x": 200.0,
+                        "Size_y": 100.0,
+                        "can_be_deleted": true,
+                        "inputsCount": 0,
+                        "outputsCount": 1,
+                        "sockets": [
+                            {
+                                "SocketID": 0,
+                                "connection_type": 1,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 0,
+                                        "connected_node_id": 5,
+                                        "connected_node_socket_id": 3
+                                    }
+                                ]
+                            }
+                        ],
+                        "values": [
+                            0.0,
+                            0.0,
+                            13832.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "type": 1,
+                        "ID": 3,
+                        "Name": "dash",
+                        "Pos_x": 8.5999755859375,
+                        "Pos_y": 180.60000610351563,
+                        "Size_x": 200.0,
+                        "Size_y": 100.0,
+                        "can_be_deleted": true,
+                        "inputsCount": 0,
+                        "outputsCount": 1,
+                        "sockets": [
+                            {
+                                "SocketID": 0,
+                                "connection_type": 1,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 0,
+                                        "connected_node_id": 5,
+                                        "connected_node_socket_id": 4
+                                    }
+                                ]
+                            }
+                        ],
+                        "values": [
+                            0.0,
+                            0.0,
+                            3496.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "type": 1,
+                        "ID": 4,
+                        "Name": "invulnerabilidad",
+                        "Pos_x": 29.4000244140625,
+                        "Pos_y": 333.6000061035156,
+                        "Size_x": 200.0,
+                        "Size_y": 100.0,
+                        "can_be_deleted": true,
+                        "inputsCount": 0,
+                        "outputsCount": 1,
+                        "sockets": [
+                            {
+                                "SocketID": 0,
+                                "connection_type": 1,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 0,
+                                        "connected_node_id": 5,
+                                        "connected_node_socket_id": 5
+                                    }
+                                ]
+                            }
+                        ],
+                        "values": [
+                            1.0,
+                            0.0,
+                            20887.0,
+                            1.0
+                        ]
+                    },
+                    {
+                        "type": 20,
+                        "ID": 5,
+                        "Name": "Selector",
+                        "Pos_x": 332.4000244140625,
+                        "Pos_y": -45.5999755859375,
+                        "Size_x": 200.0,
+                        "Size_y": 100.0,
+                        "can_be_deleted": true,
+                        "inputsCount": 5,
+                        "outputsCount": 1,
+                        "sockets": [
+                            {
+                                "SocketID": 0,
+                                "connection_type": 0,
+                                "data_type": 1,
+                                "links": [
+                                    {
+                                        "my_socket_id": 0,
+                                        "connected_node_id": 6,
+                                        "connected_node_socket_id": 0
+                                    }
+                                ]
+                            },
+                            {
+                                "SocketID": 3,
+                                "connection_type": 1,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 3,
+                                        "connected_node_id": 0,
+                                        "connected_node_socket_id": 0
+                                    }
+                                ]
+                            },
+                            {
+                                "SocketID": 1,
+                                "connection_type": 0,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 1,
+                                        "connected_node_id": 1,
+                                        "connected_node_socket_id": 0
+                                    }
+                                ]
+                            },
+                            {
+                                "SocketID": 2,
+                                "connection_type": 0,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 2,
+                                        "connected_node_id": 2,
+                                        "connected_node_socket_id": 0
+                                    }
+                                ]
+                            },
+                            {
+                                "SocketID": 4,
+                                "connection_type": 0,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 4,
+                                        "connected_node_id": 3,
+                                        "connected_node_socket_id": 0
+                                    }
+                                ]
+                            },
+                            {
+                                "SocketID": 5,
+                                "connection_type": 0,
+                                "data_type": 0,
+                                "links": [
+                                    {
+                                        "my_socket_id": 5,
+                                        "connected_node_id": 4,
+                                        "connected_node_socket_id": 0
+                                    }
+                                ]
+                            }
+                        ],
+                        "values": []
+                    },
+                    {
+                        "type": 16,
+                        "ID": 6,
+                        "Name": "uivar",
+                        "Pos_x": 301.42041015625,
+                        "Pos_y": -336.10711669921877,
+                        "Size_x": 175.0,
+                        "Size_y": 110.0,
+                        "can_be_deleted": true,
+                        "inputsCount": 0,
+                        "outputsCount": 1,
+                        "sockets": [
+                            {
+                                "SocketID": 0,
+                                "connection_type": 1,
+                                "data_type": 1,
+                                "links": [
+                                    {
+                                        "my_socket_id": 0,
+                                        "connected_node_id": 5,
+                                        "connected_node_socket_id": 0
+                                    }
+                                ]
+                            }
+                        ],
+                        "values": [
+                            0.0,
+                            2.0,
+                            1.0,
+                            0.0,
+                            1.0
+                        ]
+                    }
+                ],
+                "graphLevels_info": []
+            }
+        ],
+        "sounbank_files": [
+            {
+                "cereal_class_version": 20191030,
+                "id": 5085,
+                "bankFile": "KSB154221136690673008160DATA.krll",
+                "offsetBytes": 0,
+                "size": 33151
+            },
+            {
+                "id": 7375,
+                "bankFile": "KSB154221136690673008160DATA.krll",
+                "offsetBytes": 33151,
+                "size": 8103
+            },
+            {
+                "id": 5087,
+                "bankFile": "KSB154221136690673008160DATA.krll",
+                "offsetBytes": 41254,
+                "size": 57147
+            },
+            {
+                "id": 7377,
+                "bankFile": "KSB154221136690673008160DATA.krll",
+                "offsetBytes": 98401,
+                "size": 12977
+            },
+            {
+                "id": 5089,
+                "bankFile": "KSB154221136690673008160DATA.krll",
+                "offsetBytes": 111378,
+                "size": 66793
+            },
+            {
+                "id": 7379,
+                "bankFile": "KSB154221136690673008160DATA.krll",
+                "offsetBytes": 178171,
+                "size": 9807
+            },
+            {
+                "id": 5091,
+                "bankFile": "KSB154221136690673008160DATA.krll",
+                "offsetBytes": 187978,
+                "size": 63913
+            },
+            {
+                "id": 7381,
+                "bankFile": "KSB154221136690673008160DATA.krll",
+                "offsetBytes": 251891,
+                "size": 9371
+            },
+            {
+                "id": 19097,
+                "bankFile": "KSB154221136690673008160DATA.krll",
+                "offsetBytes": 261262,
+                "size": 2054248
+            },
+            {
+                "id": 12022,
+                "bankFile": "KSB154221136690673008160DATA.krll",
+                "offsetBytes": 2315510,
+                "size": 127017
+            },
+            {
+                "id": 3496,
+                "bankFile": "KSB154221136690673008160DATA.krll",
+                "offsetBytes": 2442527,
+                "size": 19789
+            },
+            {
+                "id": 20887,
+                "bankFile": "KSB154221136690673008160DATA.krll",
+                "offsetBytes": 2462316,
+                "size": 561222
+            },
+            {
+                "id": 3552,
+                "bankFile": "KSB154221136690673008160DATA.krll",
+                "offsetBytes": 3023538,
+                "size": 2819693
+            },
+            {
+                "id": 13832,
+                "bankFile": "KSB154221136690673008160DATA.krll",
+                "offsetBytes": 5843231,
+                "size": 23018
+            },
+            {
+                "id": 15751,
+                "bankFile": "KSB154221136690673008160DATA.krll",
+                "offsetBytes": 5866249,
+                "size": 10188
+            }
+        ],
+        "variables": [
+            {
+                "cereal_class_version": 20191030,
+                "variable_name": "musicvar",
+                "current_value": 0.0,
+                "type": 0,
+                "source": 2,
+                "content": 0,
+                "range_min": 0.0,
+                "range_max": 1.0,
+                "set_only_on_play": false
+            },
+            {
+                "variable_name": "sfxvar",
+                "current_value": 9.0,
+                "type": 0,
+                "source": 2,
+                "content": 0,
+                "range_min": 0.0,
+                "range_max": 9.0,
+                "set_only_on_play": false
+            },
+            {
+                "variable_name": "pitch",
+                "current_value": 0.0,
+                "type": 0,
+                "source": 0,
+                "content": 0,
+                "range_min": -2.0,
+                "range_max": 2.0,
+                "set_only_on_play": false
+            },
+            {
+                "variable_name": "uivar",
+                "current_value": 3.0,
+                "type": 0,
+                "source": 2,
+                "content": 0,
+                "range_min": 0.0,
+                "range_max": 4.0,
+                "set_only_on_play": true
+            }
+        ],
+        "channels": [
+            {
+                "cereal_class_version": 20200928,
+                "channel_id": 0,
+                "channel_name": "Master",
+                "parent_id": -1,
+                "volume": 1.0
+            }
+        ],
+        "engine_configurations": [
+            {
+                "cereal_class_version": 20210113,
+                "platform": 0,
+                "backend": 0,
+                "sample_rate": 0,
+                "buffer_size": 0
+            },
+            {
+                "platform": 1,
+                "backend": 0,
+                "sample_rate": 0,
+                "buffer_size": 0
+            }
+        ],
+        "creation_time": 1690649907
+    }
+}

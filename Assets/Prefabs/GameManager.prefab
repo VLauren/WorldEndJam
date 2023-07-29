@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2482007081720122718
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2482007081720122716}
+  - component: {fileID: 2482007081720122719}
+  - component: {fileID: 2482007081720122714}
+  - component: {fileID: 2482007081720122717}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2482007081720122716
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2482007081720122718}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 24.232405, y: 6.7874775, z: -22.183678}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2482007081720122719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2482007081720122718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f775cb9aebebf647bd2b8010241b914, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Joining: 1
+  GameEnd: 0
+  PlayerCount: 0
+--- !u!114 &2482007081720122714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2482007081720122718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca36c690dacad5b449503bd14a590635, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sourceShape: 0
+  sphereShapeRadius: 1
+  lineShapeStart: {x: -0, y: -0, z: -1}
+  lineShapeEnd: {x: 0, y: 0, z: 1}
+  areaShapeSize: {x: 1, y: 1, z: 1}
+  playOnAwake: 0
+  m_tags:
+  - sfx
+  - ambiente
+  - ui
+--- !u!114 &2482007081720122717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2482007081720122718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca2d19103a42ac24fbc6714179ddef28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

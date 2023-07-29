@@ -6,14 +6,61 @@ namespace KrillAudio.Krilloud
 	{
 		public class Tags
 		{
+			/// <summary>
+			/// Tag: ambiente
+			/// 3D
+			/// </summary>
+			public const string ambiente = "ambiente";
+
+			/// <summary>
+			/// Tag: music
+			/// 2D
+			/// </summary>
+			public const string music = "music";
+
+			/// <summary>
+			/// Tag: sfx
+			/// 3D
+			/// </summary>
+			public const string sfx = "sfx";
+
+			/// <summary>
+			/// Tag: ui
+			/// 2D
+			/// </summary>
+			public const string ui = "ui";
+
 		}
 
 		public class Variables
 		{
+			/// <summary>
+			/// Variable: musicvar
+			/// Range: [0 - 1]
+			/// Type: Local
+			/// </summary>
+			public const string musicvar = "musicvar";
+
+			/// <summary>
+			/// Variable: sfxvar
+			/// Range: [0 - 9]
+			/// Type: Local
+			/// </summary>
+			public const string sfxvar = "sfxvar";
+
+			/// <summary>
+			/// Variable: uivar
+			/// Range: [0 - 4]
+			/// Type: Local
+			/// </summary>
+			public const string uivar = "uivar";
+
 		}
 
 		public class Channels
 		{
+			public const string Master = "Master";
+
 		}
 	}
 }

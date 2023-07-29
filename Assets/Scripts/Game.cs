@@ -1,3 +1,4 @@
+using KrillAudio.Krilloud;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,20 +12,29 @@ public class Game : MonoBehaviour
     public const float BoatCollisionScaledPush = 3;
     public const int BoatCollisionDamage = 1;
 
+    public static KLAudioSource AudioSource;
+
     public bool Joining = true;
     public bool GameEnd;
 
     public int PlayerCount = 0;
 
+
     int DeadPlayers = 0;
+
 
     private void Awake()
     {
         Instance = this;
+        AudioSource = GetComponent<KLAudioSource>();
     }
 
     private void Start()
     {
+        Game.AudioSource.SetIntVar("musicvar", 1);
+        Game.AudioSource.Play("music");
+
+        Game.AudioSource.Play("ambiente");
     }
 
     void Update()
@@ -37,6 +47,9 @@ public class Game : MonoBehaviour
         PlayerCount++;
         Debug.Log("Player " + PlayerCount + " Joined");
         return PlayerCount;
+
+        Game.AudioSource.SetIntVar("uivar", 0);
+        Game.AudioSource.Play("ui");
     }
 
     public void StartPressed()
