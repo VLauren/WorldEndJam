@@ -23,6 +23,7 @@ public class PowerUp : MonoBehaviour
         if (other.GetComponent<Player>() != null)
         {
             other.GetComponent<Player>().HealDamage(HealedDamage);
+            Destroy(gameObject);
         }
     }
 }
