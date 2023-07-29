@@ -28,7 +28,14 @@ namespace KrillAudio.Krilloud
 			/// Tag: ui
 			/// 2D
 			/// </summary>
+			[System.Obsolete("Cache")]
 			public const string ui = "ui";
+
+			/// <summary>
+			/// Tag: ui_krill
+			/// 2D
+			/// </summary>
+			public const string ui_krill = "ui_krill";
 
 		}
 
@@ -47,6 +54,13 @@ namespace KrillAudio.Krilloud
 			/// Type: Local
 			/// </summary>
 			public const string sfxvar = "sfxvar";
+
+			/// <summary>
+			/// Variable: ui_krillvar
+			/// Range: [0 - 3]
+			/// Type: Local
+			/// </summary>
+			public const string ui_krillvar = "ui_krillvar";
 
 			/// <summary>
 			/// Variable: uivar

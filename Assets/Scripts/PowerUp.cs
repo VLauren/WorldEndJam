@@ -22,6 +22,9 @@ public class PowerUp : MonoBehaviour
     {
         if (other.GetComponent<Player>() != null)
         {
+            Game.AudioSource.SetIntVar("ui_krillvar", 1);
+            Game.AudioSource.Play("ui_krill");
+
             other.GetComponent<Player>().HealDamage(HealedDamage);
             Destroy(gameObject);
         }

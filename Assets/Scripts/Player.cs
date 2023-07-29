@@ -147,6 +147,9 @@ public class Player : MonoBehaviour
         float dashTimeCount = 0;
         Vector3 dashDir = new Vector3(InputDir.x, 0, InputDir.y);
 
+        Game.AudioSource.SetIntVar("ui_krillvar", 2);
+        Game.AudioSource.Play("ui_krill");
+
         while (DashCDCounter > 0)
         {
             DashCDCounter -= Time.deltaTime;

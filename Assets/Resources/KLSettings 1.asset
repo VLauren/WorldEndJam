@@ -21,6 +21,13 @@ MonoBehaviour:
     variables: []
   cacheContract:
     tags:
+    - name: ui
+      description: 
+      is3D: 0
+      max3DDistance: 2
+      isLoop: 0
+      channelId: 0
+      sourceContract: 2
     - name: music
       description: 
       is3D: 0
@@ -42,7 +49,7 @@ MonoBehaviour:
       isLoop: 1
       channelId: 0
       sourceContract: 2
-    - name: ui
+    - name: ui_krill
       description: 
       is3D: 0
       max3DDistance: 2
@@ -50,6 +57,14 @@ MonoBehaviour:
       channelId: 0
       sourceContract: 2
     variables:
+    - name: uivar
+      defaultValue: 0
+      isGlobal: 0
+      source: 2
+      content: 0
+      min: 0
+      max: 3
+      sourceContract: 2
     - name: musicvar
       defaultValue: 0
       isGlobal: 0
@@ -66,7 +81,7 @@ MonoBehaviour:
       min: 0
       max: 9
       sourceContract: 2
-    - name: uivar
+    - name: ui_krillvar
       defaultValue: 0
       isGlobal: 0
       source: 2

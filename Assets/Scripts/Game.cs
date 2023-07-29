@@ -35,9 +35,6 @@ public class Game : MonoBehaviour
         Game.AudioSource.Play("music");
 
         Game.AudioSource.Play("ambiente");
-
-        //Game.AudioSource.SetIntVar("sfxvar", 8);
-        //Game.AudioSource.Play("sfx");
     }
 
     void Update()
@@ -47,12 +44,12 @@ public class Game : MonoBehaviour
 
     public int OnPlayerJoined(Player _player)
     {
+        Game.AudioSource.SetIntVar("ui_krillvar", 0);
+        Game.AudioSource.Play("ui_krill");
+
         PlayerCount++;
         Debug.Log("Player " + PlayerCount + " Joined");
         return PlayerCount;
-
-        Game.AudioSource.SetIntVar("uivar", 1);
-        Game.AudioSource.Play("ui");
     }
 
     public void StartPressed()

@@ -1221,7 +1221,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2482007081720122714, guid: 108d415962a15a544b3c9bc450da0e55, type: 3}
       propertyPath: m_tags.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2482007081720122714, guid: 108d415962a15a544b3c9bc450da0e55, type: 3}
       propertyPath: m_tags.Array.data[0]
@@ -1237,7 +1237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2482007081720122714, guid: 108d415962a15a544b3c9bc450da0e55, type: 3}
       propertyPath: m_tags.Array.data[3]
-      value: music
+      value: ui_krill
       objectReference: {fileID: 0}
     - target: {fileID: 2482007081720122716, guid: 108d415962a15a544b3c9bc450da0e55, type: 3}
       propertyPath: m_RootOrder
