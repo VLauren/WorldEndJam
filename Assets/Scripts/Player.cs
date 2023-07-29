@@ -24,10 +24,12 @@ public class Player : MonoBehaviour
     Vector3 Velocity;
     Vector2 InputDir;
     bool Dead, Winner;
-    int PlayerNumber;
+    public int PlayerNumber;
 
     float DashCDCounter;
     bool Dashing;
+
+    Transform Model; 
 
     void Awake()
     {
@@ -40,10 +42,23 @@ public class Player : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 90, 0);
 
         transform.GetChild(PlayerNumber).gameObject.SetActive(true);
+        Model = transform.GetChild(PlayerNumber);
     }
 
     void Update()
     {
+
+        // =================
+        // Rotacion de modelo
+        // print(Model + " " + Model.localRotation);
+        Model.Rotate(new Vector3(Time.deltaTime * Mathf.Sin(Time.time * 3) * 20, 0, 0));
+        Model.Rotate(new Vector3(0, Time.deltaTime * Mathf.Sin(Time.time * 2) * 20, 0));
+        Model.Rotate(new Vector3(0, 0, Time.deltaTime * Mathf.Sin(Time.time * 4) * 20));
+        Model.transform.position += new Vector3(0, Time.deltaTime * Mathf.Sin(Time.time * 4) * 0.7f, 0);
+
+        // =================
+        // Movimiento
+
         // Si estoy iniciando la partida, no hago nada
         if (Game.Instance.Joining)
         {

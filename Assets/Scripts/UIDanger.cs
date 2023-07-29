@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class UIDanger : MonoBehaviour
 {
-    Player[] PlayerArray;
+    List<Player> PlayerArray;
 
     GameObject[] UIArray = new GameObject[4];
 
@@ -36,36 +36,37 @@ public class UIDanger : MonoBehaviour
         UIArray[3].SetActive(false);
         sliderPlayer4 = UIArray[3].transform.GetChild(0).GetComponent<Slider>();
 
+        PlayerArray = new List<Player>();
     }
 
     void Update()
     {
-        print("JOINING" + Game.Instance.Joining);
-
         if (Game.Instance.Joining)
         {
-            PlayerArray = FindObjectsOfType<Player>();
+            foreach (var player in FindObjectsOfType<Player>())
+                if (!PlayerArray.Contains(player))
+                    PlayerArray.Add(player);
         }
 
-        if (PlayerArray.Length >= 1)
+        if (PlayerArray.Count >= 1)
         {
             UIArray[0].SetActive(true);
             sliderPlayer1.value = PlayerArray[0].ReceivedDamage;
         }
 
-        if (PlayerArray.Length == 2)
+        if (PlayerArray.Count >= 2)
         {
             UIArray[1].SetActive(true);
             sliderPlayer2.value = PlayerArray[1].ReceivedDamage;
         }
 
-        if (PlayerArray.Length == 3)
+        if (PlayerArray.Count >= 3)
         {
             UIArray[2].SetActive(true);
             sliderPlayer3.value = PlayerArray[2].ReceivedDamage;
         }
 
-        if (PlayerArray.Length == 4)
+        if (PlayerArray.Count >= 4)
         {
             UIArray[3].SetActive(true);
             sliderPlayer4.value = PlayerArray[3].ReceivedDamage;
