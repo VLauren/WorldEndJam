@@ -20,7 +20,59 @@ MonoBehaviour:
     tags: []
     variables: []
   cacheContract:
-    tags: []
-    variables: []
+    tags:
+    - name: music
+      description: 
+      is3D: 0
+      max3DDistance: 2
+      isLoop: 1
+      channelId: 0
+      sourceContract: 2
+    - name: sfx
+      description: 
+      is3D: 1
+      max3DDistance: 2
+      isLoop: 0
+      channelId: 0
+      sourceContract: 2
+    - name: ambiente
+      description: 
+      is3D: 1
+      max3DDistance: 2
+      isLoop: 1
+      channelId: 0
+      sourceContract: 2
+    - name: ui
+      description: 
+      is3D: 0
+      max3DDistance: 2
+      isLoop: 0
+      channelId: 0
+      sourceContract: 2
+    variables:
+    - name: musicvar
+      defaultValue: 0
+      isGlobal: 0
+      source: 2
+      content: 0
+      min: 0
+      max: 1
+      sourceContract: 2
+    - name: sfxvar
+      defaultValue: 9
+      isGlobal: 0
+      source: 2
+      content: 0
+      min: 0
+      max: 9
+      sourceContract: 2
+    - name: uivar
+      defaultValue: 3
+      isGlobal: 0
+      source: 2
+      content: 0
+      min: 0
+      max: 4
+      sourceContract: 2
     soundbank_files: []
     channels: []
