@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject Obstacle01Prefab;
+    public List<GameObject> Prefabs;
 
     public float ObstacleSpawnRate = 0.3f;
 
@@ -35,6 +35,6 @@ public class Spawner : MonoBehaviour
 
         float RandomZ = Random.Range((transform.localScale.z * -1) / 2, transform.localScale.z / 2);
 
-        Instantiate(Obstacle01Prefab, transform.position + new Vector3(RandomX, 0, RandomZ), Quaternion.identity);
+        Instantiate(Prefabs[Random.Range(0, Prefabs.Count)], transform.position + new Vector3(RandomX, 0, RandomZ), Quaternion.identity);
     }
 }
