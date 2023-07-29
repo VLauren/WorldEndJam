@@ -130,6 +130,9 @@ MonoBehaviour:
   ReceivedDamage: 0
   XMovLimits: {x: -4, y: 50}
   ZMovLimits: {x: -40, y: 20}
+  DashCooldown: 1.2
+  DashTime: 0.2
+  DashSpeed: 25
 --- !u!114 &-8270495698009729364
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -17,9 +17,9 @@ public class Player : MonoBehaviour
     public Vector2 ZMovLimits;
 
     [Space()]
-    public float DashCooldown = 1;
-    public float DashTime = 0.2f;
-    public float DashSpeed = 20;
+    public float DashCooldown;
+    public float DashTime;
+    public float DashSpeed;
 
     Vector3 Velocity;
     Vector2 InputDir;
@@ -66,7 +66,7 @@ public class Player : MonoBehaviour
             pos.z = Mathf.Clamp(pos.z, ZMovLimits.x, ZMovLimits.y);
             transform.position = pos;
 
-            if(Game.Instance.GameEnd && !Winner)
+            if (Game.Instance.GameEnd && !Winner)
             {
                 Winner = true;
                 Debug.Log("PLAYER " + PlayerNumber + " WINS!!!");
@@ -79,7 +79,8 @@ public class Player : MonoBehaviour
             }
         }
 
-        transform.position += Velocity * Time.deltaTime;
+        if (!Dashing)
+            transform.position += Velocity * Time.deltaTime;
 
         // ================
         // DEBUG
