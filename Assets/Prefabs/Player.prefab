@@ -118,9 +118,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 620bc98c68c540243ab3e3ff5afd4007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxSpeed: 8
-  Acceleration: 20
-  Deceleration: 20
+  MaxSpeed: 18
+  Acceleration: 30
+  Deceleration: 10
   ReceivedDamage: 0
   XMovLimits: {x: -4, y: 50}
   ZMovLimits: {x: -40, y: 20}
