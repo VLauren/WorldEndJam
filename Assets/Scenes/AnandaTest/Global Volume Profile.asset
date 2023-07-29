@@ -15,16 +15,16 @@ MonoBehaviour:
   active: 1
   color:
     m_OverrideState: 1
-    m_Value: {r: 0, g: 0.060724825, b: 0.6886792, a: 1}
+    m_Value: {r: 0.3376292, g: 0.14297791, b: 0.5943396, a: 1}
   center:
     m_OverrideState: 1
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.38
+    m_Value: 0.39
   smoothness:
     m_OverrideState: 1
-    m_Value: 0.2
+    m_Value: 0.153
   rounded:
     m_OverrideState: 1
     m_Value: 0
@@ -43,13 +43,13 @@ MonoBehaviour:
   active: 1
   lift:
     m_OverrideState: 1
-    m_Value: {x: 0.9983215, y: 0.9275304, z: 1, w: 0.027816415}
+    m_Value: {x: 0.97572625, y: 0.95450085, z: 1, w: 0.027816415}
   gamma:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 1, z: 1, w: 0}
+    m_Value: {x: 1, y: 0.9246192, z: 0.8647266, w: 0}
   gain:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 1, z: 1, w: 0.13908204}
+    m_Value: {x: 0.96975183, y: 1, z: 0.9814126, w: 0.13908204}
 --- !u!114 &-539523032945005023
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -64,25 +64,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   shadows:
-    m_OverrideState: 0
-    m_Value: {x: 1, y: 1, z: 1, w: 0}
+    m_OverrideState: 1
+    m_Value: {x: 0.9528277, y: 0.81216943, z: 1, w: 0.24890189}
   midtones:
-    m_OverrideState: 0
-    m_Value: {x: 1, y: 1, z: 1, w: 0}
+    m_OverrideState: 1
+    m_Value: {x: 0.9831569, y: 0.9829056, z: 1, w: 0.05856516}
   highlights:
     m_OverrideState: 1
-    m_Value: {x: 0.81952226, y: 1, z: 0.8482774, w: 0.24890195}
+    m_Value: {x: 0.81110704, y: 1, z: 0.7388129, w: 0.4831626}
   shadowsStart:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   shadowsEnd:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0.3
   highlightsStart:
-    m_OverrideState: 0
-    m_Value: 0.55
+    m_OverrideState: 1
+    m_Value: 0.15
   highlightsEnd:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -117,25 +117,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   threshold:
-    m_OverrideState: 0
-    m_Value: 0.9
+    m_OverrideState: 1
+    m_Value: 0.95
   intensity:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 0.02
   scatter:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0.7
   clamp:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 65472
   tint:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: {r: 1, g: 1, b: 1, a: 1}
   highQualityFiltering:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   skipIterations:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   dirtTexture:
     m_OverrideState: 0
@@ -159,7 +159,7 @@ MonoBehaviour:
   active: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 0.37
+    m_Value: 0.25
 --- !u!114 &8848893926310292504
 MonoBehaviour:
   m_ObjectHideFlags: 3
