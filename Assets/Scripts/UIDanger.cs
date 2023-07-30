@@ -121,6 +121,7 @@ public class UIDanger : MonoBehaviour
             if (player.Winner == true)
             {
                 PlayerNumber = player.PlayerNumber;
+                transform.Find("Winner/VictoryText").GetComponent<Text>().text = "Jugador " + PlayerNumber + " Gana!";
             }
         }
     }
