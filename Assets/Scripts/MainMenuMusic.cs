@@ -8,8 +8,8 @@ public class MainMenuMusic : MonoBehaviour
     void Start()
     {
         KLAudioSource klas = GetComponent<KLAudioSource>();
-        klas.SetIntVar("musicvar", 0);
-        klas.Play("music");
+        // klas.SetIntVar("musicvar", 0);
+        // klas.Play("music");
     }
 
     void BeepSound()

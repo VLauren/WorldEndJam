@@ -21,12 +21,10 @@ public class MainMenu : MonoBehaviour
 
     void OnMenuStart(InputValue value)
     {
-        HowToPlay.SetActive(true);
-
         if (HowToPlay.activeSelf)
-        {
-
             SceneManager.LoadScene("GameScene");
-        }
+        else
+            HowToPlay.SetActive(true);
+
     }
 }
