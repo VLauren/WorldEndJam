@@ -145,7 +145,7 @@ public class Player : MonoBehaviour
 
         Game.AudioSource.SetIntVar("ui_krillvar", 2);
         Game.AudioSource.Play("ui_krill");
-        VFX.Effect(0, transform.position, Quaternion.LookRotation(dashDir));
+        VFX.Effect(2, transform.position, Quaternion.LookRotation(dashDir));
 
         while (DashCDCounter > 0)
         {
