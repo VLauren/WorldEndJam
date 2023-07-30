@@ -241,7 +241,7 @@ public class Player : MonoBehaviour
     {
         InvulCounter = _time;
         Invulnerable = true;
-        transform.GetChild(PlayerNumber).GetChild(0).GetComponent<Renderer>().material.SetFloat("_rainbow", 1);
+        transform.GetChild(PlayerNumber).GetChild(0).GetComponentInChildren<Renderer>().material.SetFloat("_rainbow", 1);
 
         Game.AudioSource.SetIntVar("ui_krillvar", 3);
         Game.AudioSource.Play("ui_krill");
