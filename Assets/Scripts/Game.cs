@@ -83,7 +83,7 @@ public class Game : MonoBehaviour
         GameEnd = true;
         yield return new WaitForSeconds(3);
 
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("GameScene");
     }
 
 }
