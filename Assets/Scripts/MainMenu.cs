@@ -6,13 +6,14 @@ using UnityEngine.InputSystem;
 
 public class MainMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject HowToPlay;
+
     void Start()
     {
-
+        HowToPlay = transform.Find("HowToPlay").gameObject;
+        HowToPlay.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
 
@@ -20,8 +21,12 @@ public class MainMenu : MonoBehaviour
 
     void OnMenuStart(InputValue value)
     {
+        HowToPlay.SetActive(true);
 
-        SceneManager.LoadScene("GameScene");
+        if (HowToPlay.activeSelf)
+        {
 
+            SceneManager.LoadScene("GameScene");
+        }
     }
 }
