@@ -12,6 +12,8 @@ public class Obstacle : MonoBehaviour
 
     public bool Immunity;
 
+    bool SoundPlayed;
+
     void Update()
     {
         transform.position += movementDirection * Time.deltaTime;
@@ -20,6 +22,13 @@ public class Obstacle : MonoBehaviour
         {
             transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, 0, -90), Time.deltaTime * 5);
             transform.position += new Vector3(0, -6 * Time.deltaTime, 0);
+
+            if(!SoundPlayed && name.Contains("ObstaculoH"))
+            {
+                SoundPlayed = true;
+                Game.AudioSource.SetIntVar("sfxvar", 8);
+                Game.AudioSource.Play("sfx");
+            }
         }
     }
 
