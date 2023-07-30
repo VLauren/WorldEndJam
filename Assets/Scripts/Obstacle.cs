@@ -34,7 +34,7 @@ public class Obstacle : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<Player>() != null)
+        if (other.GetComponent<Player>() != null && !other.GetComponent<Player>().Invulnerable)
         {
             other.GetComponent<Player>().ApplyDamage(Damage);
             other.GetComponent<Player>().AddImpulse(impulse);

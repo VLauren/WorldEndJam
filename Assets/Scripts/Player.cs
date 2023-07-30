@@ -122,6 +122,8 @@ public class Player : MonoBehaviour
                 transform.GetChild(PlayerNumber).GetChild(0).GetComponent<Renderer>().material.SetFloat("_rainbow", 0);
 
                 Game.AudioSource.StopTag("ui_krill");
+
+                transform.Find("InvulFX").gameObject.SetActive(false);
             }
         }
         // ================
@@ -245,5 +247,7 @@ public class Player : MonoBehaviour
 
         Game.AudioSource.SetIntVar("ui_krillvar", 3);
         Game.AudioSource.Play("ui_krill");
+
+        transform.Find("InvulFX").gameObject.SetActive(true);
     }
 }
