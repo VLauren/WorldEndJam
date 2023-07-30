@@ -18,12 +18,12 @@ public class Obstacle : MonoBehaviour
     {
         transform.position += movementDirection * Time.deltaTime;
 
-        if (transform.position.x > 25)
+        if (transform.position.x > 25 && name.Contains("ObstaculoH"))
         {
             transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, 0, -90), Time.deltaTime * 5);
             transform.position += new Vector3(0, -6 * Time.deltaTime, 0);
 
-            if(!SoundPlayed && name.Contains("ObstaculoH"))
+            if (!SoundPlayed)
             {
                 SoundPlayed = true;
                 Game.AudioSource.SetIntVar("sfxvar", 8);
