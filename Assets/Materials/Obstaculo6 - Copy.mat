@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Obstaculo5
-  m_Shader: {fileID: -6465566751694194690, guid: 2b8515c4221ea584885774ff56a3a11d, type: 3}
+  m_Name: Obstaculo6 - Copy
+  m_Shader: {fileID: -6465566751694194690, guid: 0238ebd3d10d11742b738612854f405f, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -65,7 +65,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2D:
-        m_Texture: {fileID: 2800000, guid: d1f7b3184310fa94085644c88cad6177, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1d73340fa4bc8af4180a6b94f10328c0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
