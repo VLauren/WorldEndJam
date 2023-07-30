@@ -9,6 +9,8 @@ public class Spawner : MonoBehaviour
     public float ObstacleSpawnRate = 0.3f;
 
     bool Started;
+    bool Double, Triple;
+    float Counter;
 
     void Update()
     {
@@ -17,6 +19,21 @@ public class Spawner : MonoBehaviour
             Started = true;
             InvokeRepeating("SpawnObstacle", 2, 1f / ObstacleSpawnRate);
         }
+
+        if(!Double && Counter > 60)
+        {
+            Double = true;
+            InvokeRepeating("SpawnObstacle", 2, 1f / ObstacleSpawnRate);
+        }
+
+        if(!Triple && Counter > 120)
+        {
+            Triple = true;
+            InvokeRepeating("SpawnObstacle", 2, 1f / (ObstacleSpawnRate * 4));
+        }
+
+        if (Started)
+            Counter += Time.deltaTime;
     }
 
     private void OnDrawGizmos()

@@ -392,6 +392,17 @@
                     "action": "MenuStart",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "303a8766-c8b7-4f4d-9cef-594ba788793e",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MenuStart",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },

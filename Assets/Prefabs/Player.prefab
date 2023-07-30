@@ -193,6 +193,7 @@ MonoBehaviour:
   Acceleration: 30
   Deceleration: 10
   ReceivedDamage: 0
+  Invulnerable: 0
   XMovLimits: {x: -4, y: 50}
   ZMovLimits: {x: -40, y: 20}
   DashCooldown: 1.2

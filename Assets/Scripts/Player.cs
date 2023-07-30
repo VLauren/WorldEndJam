@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     public float Deceleration;
 
     public int ReceivedDamage = 0;
+    public bool Invulnerable;
 
     [Space()]
     public Vector2 XMovLimits;
@@ -31,6 +32,7 @@ public class Player : MonoBehaviour
 
     Transform Model;
 
+    float InvulCounter;
     void Awake()
     {
     }
@@ -110,6 +112,18 @@ public class Player : MonoBehaviour
         if (ReceivedDamage <= 0)
             ReceivedDamage = 0;
 
+        if(Invulnerable)
+        {
+            InvulCounter -= Time.deltaTime;
+
+            if(InvulCounter <= 0)
+            {
+                Invulnerable = false;
+                transform.GetChild(PlayerNumber).GetChild(0).GetComponent<Renderer>().material.SetFloat("_rainbow", 0);
+
+                Game.AudioSource.StopTag("ui_krill");
+            }
+        }
         // ================
         // DEBUG
 
@@ -166,6 +180,9 @@ public class Player : MonoBehaviour
 
     public void ApplyDamage(int _damage)
     {
+        if (Invulnerable)
+            return;
+
         ReceivedDamage += _damage;
 
         EdgeCamera.CameraShake(0.5f, 0.3f);
@@ -218,5 +235,15 @@ public class Player : MonoBehaviour
         {
             ReceivedDamage -= _healing;
         }
+    }
+
+    public void StartInvul(float _time)
+    {
+        InvulCounter = _time;
+        Invulnerable = true;
+        transform.GetChild(PlayerNumber).GetChild(0).GetComponentInChildren<Renderer>().material.SetFloat("_rainbow", 1);
+
+        Game.AudioSource.SetIntVar("ui_krillvar", 3);
+        Game.AudioSource.Play("ui_krill");
     }
 }

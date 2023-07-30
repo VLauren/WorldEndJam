@@ -14,6 +14,9 @@
         },
         {
             "m_Id": "0b0081d1a141433e98cce529138c030e"
+        },
+        {
+            "m_Id": "147cb8ceb0624ea0b9f8e447b1270f4d"
         }
     ],
     "m_Keywords": [],
@@ -95,6 +98,9 @@
         },
         {
             "m_Id": "9360352ef38340d68658725db45bd62d"
+        },
+        {
+            "m_Id": "3eeab2e4986046108bcd4886146c1335"
         }
     ],
     "m_GroupDatas": [],
@@ -138,6 +144,20 @@
             "m_InputSlot": {
                 "m_Node": {
                     "m_Id": "124217fb81d947dcac3f42c5b075dcba"
+                },
+                "m_SlotId": 1
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "3eeab2e4986046108bcd4886146c1335"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "de68d90e60a84adb8ca9a7e0be8171b4"
                 },
                 "m_SlotId": 1
             }
@@ -911,6 +931,33 @@
 }
 
 {
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "147cb8ceb0624ea0b9f8e447b1270f4d",
+    "m_Guid": {
+        "m_GuidSerialized": "207ef031-3f24-449c-a78c-4eb76ca30fff"
+    },
+    "m_Name": "rainbow speed",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "rainbow speed",
+    "m_DefaultReferenceName": "_rainbow_speed",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 0.75,
+    "m_FloatType": 0,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
+    }
+}
+
+{
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "14b2f7ef3a8e4190b0d3433813bc3b89",
@@ -1237,6 +1284,41 @@
         "y": 0.0,
         "z": 0.0,
         "w": 0.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "3eeab2e4986046108bcd4886146c1335",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -783.9999389648438,
+            "y": 1564.0,
+            "width": 152.0,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "d525a957daa54ed1a9c687c0a6fa4946"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "147cb8ceb0624ea0b9f8e447b1270f4d"
     }
 }
 
@@ -2579,6 +2661,9 @@
         },
         {
             "m_Id": "0b0081d1a141433e98cce529138c030e"
+        },
+        {
+            "m_Id": "147cb8ceb0624ea0b9f8e447b1270f4d"
         }
     ]
 }
@@ -2703,9 +2788,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -658.0,
-            "y": 1355.0,
-            "width": 123.99993896484375,
+            "x": -837.0,
+            "y": 1363.0,
+            "width": 124.0,
             "height": 173.0
         }
     },
@@ -2975,6 +3060,21 @@
     "m_CustomColors": {
         "m_SerializableColors": []
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "d525a957daa54ed1a9c687c0a6fa4946",
+    "m_Id": 0,
+    "m_DisplayName": "rainbow speed",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
 }
 
 {
