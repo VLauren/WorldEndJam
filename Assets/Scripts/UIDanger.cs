@@ -63,6 +63,11 @@ public class UIDanger : MonoBehaviour
                     PlayerArray.Add(player);
 
             PressToJoin.SetActive(true);
+
+            transform.Find("Join/Player1").gameObject.SetActive(PlayerArray.Count < 1);
+            transform.Find("Join/Player2").gameObject.SetActive(PlayerArray.Count < 2);
+            transform.Find("Join/Player3").gameObject.SetActive(PlayerArray.Count < 3);
+            transform.Find("Join/Player4").gameObject.SetActive(PlayerArray.Count < 4);
         }
 
         if (!Game.Instance.Joining)
@@ -116,6 +121,7 @@ public class UIDanger : MonoBehaviour
             if (player.Winner == true)
             {
                 PlayerNumber = player.PlayerNumber;
+                transform.Find("Winner/VictoryText").GetComponent<Text>().text = "Jugador " + PlayerNumber + " Gana!";
             }
         }
     }

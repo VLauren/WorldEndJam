@@ -2,6 +2,7 @@ using KrillAudio.Krilloud;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class Game : MonoBehaviour
@@ -39,7 +40,9 @@ public class Game : MonoBehaviour
 
     void Update()
     {
-
+        Keyboard kb = Keyboard.current;
+        if (kb.escapeKey.wasPressedThisFrame)
+            SceneManager.LoadScene("MainMenu");
     }
 
     public int OnPlayerJoined(Player _player)
@@ -83,7 +86,7 @@ public class Game : MonoBehaviour
         GameEnd = true;
         yield return new WaitForSeconds(3);
 
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("GameScene");
     }
 
 }

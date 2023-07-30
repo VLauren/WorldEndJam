@@ -107,19 +107,15 @@ public class Player : MonoBehaviour
         if (!Dashing)
             transform.position += Velocity * Time.deltaTime;
 
+        if (ReceivedDamage <= 0)
+            ReceivedDamage = 0;
+
         // ================
         // DEBUG
 
-        Keyboard kb = Keyboard.current;
-        if (kb.qKey.wasPressedThisFrame)
-        {
-            AddImpulse(new Vector3(10, 0, 0));
-        }
-
-        if (ReceivedDamage <= 0)
-        {
-            ReceivedDamage = 0;
-        }
+        // Keyboard kb = Keyboard.current;
+        // if (kb.qKey.wasPressedThisFrame)
+        // AddImpulse(new Vector3(10, 0, 0));
     }
 
     void OnMove(InputValue value)
@@ -149,6 +145,7 @@ public class Player : MonoBehaviour
 
         Game.AudioSource.SetIntVar("ui_krillvar", 2);
         Game.AudioSource.Play("ui_krill");
+        VFX.Effect(2, transform.position, Quaternion.LookRotation(dashDir));
 
         while (DashCDCounter > 0)
         {

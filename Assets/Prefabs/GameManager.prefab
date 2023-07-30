@@ -99,3 +99,4 @@ MonoBehaviour:
   EffectsPrefabs:
   - {fileID: 5885509346375710845, guid: 65740688fe0916c419fb04a9da8d5dde, type: 3}
   - {fileID: 6899823388283042373, guid: fbfaad0d2d273d2499ca92ff8faa350a, type: 3}
+  - {fileID: 5885509346375710845, guid: fa4b179bab2d18d44861302af55996dc, type: 3}
