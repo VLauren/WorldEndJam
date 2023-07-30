@@ -12,6 +12,8 @@ public class PowerUp : MonoBehaviour
 
     public bool Immunity;
 
+    public int InvulTime = 5;
+
     // Update is called once per frame
     void Update()
     {
@@ -26,7 +28,7 @@ public class PowerUp : MonoBehaviour
             Game.AudioSource.Play("ui_krill");
 
             if (Immunity)
-                other.GetComponent<Player>().StartInvul(10);
+                other.GetComponent<Player>().StartInvul(InvulTime);
             else
                 other.GetComponent<Player>().HealDamage(HealedDamage);
 

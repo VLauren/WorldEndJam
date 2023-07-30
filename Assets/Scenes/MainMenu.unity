@@ -901,6 +901,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1352670731}
   m_CullTransparentMesh: 1
+--- !u!1001 &1694675735
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1646803653583121641, guid: 64e0d97d9b4241746b979f3c954f2daa, type: 3}
+      propertyPath: m_Name
+      value: MainMenuMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 5298776471989405481, guid: 64e0d97d9b4241746b979f3c954f2daa, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5298776471989405481, guid: 64e0d97d9b4241746b979f3c954f2daa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 22.12067
+      objectReference: {fileID: 0}
+    - target: {fileID: 5298776471989405481, guid: 64e0d97d9b4241746b979f3c954f2daa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.7858686
+      objectReference: {fileID: 0}
+    - target: {fileID: 5298776471989405481, guid: 64e0d97d9b4241746b979f3c954f2daa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -11.752825
+      objectReference: {fileID: 0}
+    - target: {fileID: 5298776471989405481, guid: 64e0d97d9b4241746b979f3c954f2daa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5298776471989405481, guid: 64e0d97d9b4241746b979f3c954f2daa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5298776471989405481, guid: 64e0d97d9b4241746b979f3c954f2daa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5298776471989405481, guid: 64e0d97d9b4241746b979f3c954f2daa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5298776471989405481, guid: 64e0d97d9b4241746b979f3c954f2daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5298776471989405481, guid: 64e0d97d9b4241746b979f3c954f2daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5298776471989405481, guid: 64e0d97d9b4241746b979f3c954f2daa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 64e0d97d9b4241746b979f3c954f2daa, type: 3}
 --- !u!1 &1729965382
 GameObject:
   m_ObjectHideFlags: 0
@@ -973,7 +1030,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "BE THE LAST PARTIER OF THE EARTH\nLAUNCH THEM OFF THE PLANET\n\n\xA1COME
-    ON PARTIER, LET GO PARTY!"
+    ON PARTIER, LET'S GO PARTY!"
 --- !u!222 &1729965385
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -119,7 +119,7 @@ public class Player : MonoBehaviour
             if(InvulCounter <= 0)
             {
                 Invulnerable = false;
-                transform.GetChild(PlayerNumber).GetChild(0).GetComponent<Renderer>().material.SetFloat("_rainbow", 0);
+                transform.GetChild(PlayerNumber).GetChild(0).GetComponentInChildren<Renderer>().material.SetFloat("_rainbow", 0);
 
                 Game.AudioSource.StopTag("ui_krill");
 

@@ -132,3 +132,4 @@ MonoBehaviour:
   scaledImpulse: {x: 6, y: 0, z: -2}
   HealedDamage: 4
   Immunity: 1
+  InvulTime: 10
