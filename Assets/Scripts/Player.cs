@@ -201,6 +201,11 @@ public class Player : MonoBehaviour
                 AddImpulse(-dir * Game.BoatCollisionPush);
                 AddScaledImpulse(-dir * Game.BoatCollisionScaledPush);
                 ApplyDamage(Game.BoatCollisionDamage);
+
+                Vector3 midPoint = (other.transform.position + transform.position) / 2;
+
+                VFX.Effect(0, midPoint);
+                VFX.Effect(1, midPoint);
             }
         }
     }

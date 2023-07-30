@@ -30,6 +30,10 @@ public class Obstacle : MonoBehaviour
             other.GetComponent<Player>().ApplyDamage(Damage);
             other.GetComponent<Player>().AddImpulse(impulse);
             other.GetComponent<Player>().AddScaledImpulse(scaledImpulse);
+
+            VFX.Effect(0, other.transform.position);
+            VFX.Effect(1, other.transform.position);
+            VFX.Effect(1, other.transform.position);
         }
     }
 }
